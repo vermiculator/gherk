@@ -1,0 +1,11 @@
+[
+    { "title": "photo"},
+    { "title" : "person"},
+    { "title" : "nature"},
+    { "title" : "illu"},
+    { "title" : "creature"},
+    { "title" : "writing"},
+    { "title" : "painting"},
+    { "title" : "sketch"},
+    { "title" : "misc"}
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "title": "archive",
+        "src" : "archive.yml"
+    },
+    {
+        "title": "bookmarks",
+        "src" : "bookmarks.yml"
+    },
+    {
+        "title": "earth",
+        "src" : "earth.yml"
+    }
+]

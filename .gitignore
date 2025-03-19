@@ -1,0 +1,47 @@
+# build output
+dist/
+
+# generated types
+.astro/
+
+# environment variables
+.env
+.env.production
+
+# macOS
+.DS_Store
+
+### node
+/node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+### misc
+.vscode
+*.log
+.DS_Store
+desktop.ini
+.megaignore
+/assets
+*.acsm
+
+## obsidian
+/Rubbish
+/.obsidian
+publish.css
+
+## filen
+/.trash
+.filenignore
+
+## content
+/src/content
+/src/pages
+/src/assets
+/src/data/bookmarks
+
+## for now
+/backend
+.venv
