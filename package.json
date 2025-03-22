@@ -12,11 +12,13 @@
   "dependencies": {
     "@astrojs/react": "^4.2.0",
     "@astrojs/starlight": "^0.31.1",
+    "@portaljs/remark-wiki-link": "^1.2.0",
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
     "astro": "^5.1.5",
     "d3": "^7.9.0",
     "flask-cors": "^0.0.1",
+    "patch-package": "^8.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "sharp": "^0.32.5"
