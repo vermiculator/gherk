@@ -1,0 +1,15 @@
+---
+import Default from "@astrojs/starlight/components/PageSidebar.astro";
+
+import { PageGraph, PageBacklinks } from "starlight-site-graph/components";
+---
+
+<PageGraph class="right-sidebar-panel graph-panel"></PageGraph>
+
+<PageBacklinks class="right-sidebar-panel backlinks-panel">
+  <h2 slot="title">Backlinks</h2>
+</PageBacklinks>
+
+<Default>
+  <slot />
+</Default>
