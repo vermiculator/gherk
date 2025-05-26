@@ -9,6 +9,9 @@ import starlightSiteGraph from 'starlight-site-graph';
 export default defineConfig({
     integrations: [starlight({
         title: 'gherk',
+        customCss: [
+            './src/styles/custom.css',
+        ],
         social: [
             { icon: 'github', label: 'GitHub', href: 'https://github.com/rowanlucas' },
         ],

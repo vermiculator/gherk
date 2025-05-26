@@ -12,6 +12,12 @@ export const collections = {
 			extend: pageSiteGraphSchema
 		}),
 	}),
+	about: defineCollection({ 
+		loader: docsLoader(), 
+		schema: docsSchema({
+			extend: pageSiteGraphSchema
+		}),
+	}),
 	earth: defineCollection({ 
 		loader: docsLoader(), 
 		schema: docsSchema({
