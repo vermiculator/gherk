@@ -92,5 +92,4 @@ export const collections = {
 
 	////////////////////////////////////////////
 
-	// add media collections?
 };
