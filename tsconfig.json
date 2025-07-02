@@ -2,19 +2,29 @@
   "extends": "astro/tsconfigs/strict",
   "include": [
     ".astro/types.d.ts",
+    "./src",
+    "node_modules/@types/p5/index.d.ts",
     "**/*"
   ],
   "exclude": [
-    "/dist",
-    "/src/content/.obsidian",
-    "/src/content/.trash",
-    "/src/content/.Rubbish",
-    "/src/content/private",
-    "/src/content/seeds",
-    "/src/content/themes"
+    "node_modules",
+     "dist",
+     "public",
+    "/src/content/vault/.obsidian",
+    "/src/content/vault/.trash",
+    "/src/content/vault/.data-fetcher-cache",
+   "/src/content/vault/are.na",
+    "/src/content/vault/.Rubbish",
+    "/src/content/vault/private",
+    "/src/content/vault/seeds"
   ],
   "compilerOptions": {
     "jsx": "react-jsx",
-    "jsxImportSource": "react"
-  }
+    "jsxImportSource": "react",
+    "types": ["vite/client"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+}
 }

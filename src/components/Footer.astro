@@ -1,6 +1,8 @@
 ---
 import LastUpdated from '@astrojs/starlight/components/LastUpdated.astro';
 import Pagination from '@astrojs/starlight/components/Pagination.astro';
+const { msg } = Astro.props;
+
 ---
 
 <footer class="sl-flex">
@@ -28,18 +30,4 @@ import Pagination from '@astrojs/starlight/components/Pagination.astro';
 		margin-inline-start: auto;
 	}
 
-	.kudos {
-		align-items: center;
-		gap: 0.5em;
-		margin: 1.5rem auto;
-		font-size: var(--sl-text-xs);
-		text-decoration: none;
-		color: var(--sl-color-gray-3);
-	}
-	.kudos :global(svg) {
-		color: var(--sl-color-orange);
-	}
-	.kudos:hover {
-		color: var(--sl-color-white);
-	}
 </style>

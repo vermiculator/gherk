@@ -1,0 +1,13 @@
+---
+const { script_path, canvas_id, figure_id, description }  = Astro.props;
+const script_url = '/' + script_path;
+---
+<script>
+import p5 from 'p5'
+new p5('/scripts/earth-map.js', document.getElementById('earth-map'))
+</script>
+<div class="p5-div" id={canvas_id}>
+</div>
+<p><b>Figure {figure_id}</b>: {description} <a href={script_url}><b>Sketch source</b></a>
+
+</p>
