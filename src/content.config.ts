@@ -43,7 +43,6 @@ export const collections = {
 			}).merge(pageSiteGraphSchema),
 		  }), 
 	}),
-	siteMeta: defineCollection({ loader: docsLoader(), schema: docsSchema() }),
 	vignettes: defineCollection({ 
 		loader: glob({ pattern: ['**/*.md'], base: "./src/content/vignettes/data" }),
 		schema: z.object({
@@ -59,7 +58,20 @@ export const collections = {
 			date: z.date().optional(), // YYYY-MM-DD
 		}),
 	}),
-
+	mulch: defineCollection({ 
+		loader: glob({ pattern: ['**/*.md'], base: "./src/content/mulch/data" }),
+		schema: z.object({
+			format: z.enum(['image', 'video']),
+			kind: z.enum(['col', 'mono']),
+			image: z.object({
+				src: z.string(),
+				alt: z.string().optional(),
+			}).optional(),
+			title: z.string().optional(),
+			caption: z.string().optional(),
+			date: z.date().optional(), // YYYY-MM-DD
+		}),
+	}),
 	////////////////// DATA ///////////////////////
 
 	vignetteTypes: defineCollection({ 

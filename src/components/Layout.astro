@@ -4,16 +4,12 @@ import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
 import Footer from '../components/Footer.astro';
 const { pageTitle, tabTitle, pageStyle, starlightSettings, footerMsg  } = Astro.props;
 starlightSettings.title = pageTitle;
-starlightSettings.tableOfContents = !(pageStyle == 'full');
+starlightSettings.tableOfContents = pageStyle == 'docs';
 starlightSettings.template = (pageStyle == 'full' ? 'splash' : 'doc');
 ---  
 
-<div class="page">
-
 <StarlightPage frontmatter={starlightSettings}>
-
+ <slot />
 </StarlightPage>
 
 <Footer msg={footerMsg}/>
-
-</div>
