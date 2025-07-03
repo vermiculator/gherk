@@ -1,8 +1,7 @@
 ---
 import '../styles/custom.css'
 import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
-import Footer from '../components/Footer.astro';
-const { pageTitle, tabTitle, pageStyle, starlightSettings, footerMsg  } = Astro.props;
+const { pageTitle, tabTitle, pageStyle, starlightSettings  } = Astro.props;
 starlightSettings.title = pageTitle;
 starlightSettings.tableOfContents = pageStyle == 'docs';
 starlightSettings.template = (pageStyle == 'full' ? 'splash' : 'doc');
@@ -11,5 +10,3 @@ starlightSettings.template = (pageStyle == 'full' ? 'splash' : 'doc');
 <StarlightPage frontmatter={starlightSettings}>
  <slot />
 </StarlightPage>
-
-<Footer msg={footerMsg}/>

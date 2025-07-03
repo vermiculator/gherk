@@ -1,6 +1,7 @@
 import * as React from "react"
 import * as ScrollAreaPrimitive from "@radix-ui/react-scroll-area"
-
+import "tailwindcss"
+import "tw-animate-css"
 import { cn } from "@/lib/utils"
 
 function ScrollArea({

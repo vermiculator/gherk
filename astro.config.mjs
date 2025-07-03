@@ -2,10 +2,9 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import react from '@astrojs/react';
-import starlightObsidian, { obsidianSidebarGroup } from 'starlight-obsidian';
+import starlightObsidian from 'starlight-obsidian';
 import starlightSiteGraph from 'starlight-site-graph';
-
-import tailwindcss from '@tailwindcss/vite';
+import starlightScrollToTop from 'starlight-scroll-to-top';
 
 // https://astro.build/config
 export default defineConfig({
@@ -14,23 +13,23 @@ export default defineConfig({
       title: 'gherk',
       customCss: [
           './src/styles/custom.css',
+          './src/styles/shadcn.css'
       ],
       social: [
           { icon: 'github', label: 'GitHub', href: 'https://github.com/vermiculator' },
       ],
      components: {
+      Sidebar: './src/components/Sidebar.astro',
       PageSidebar: './src/components/PageSidebar.astro',
       },
       sidebar: [
           {
               label: 'earth',
-              collapsed: true,
-              autogenerate: { directory: 'earth' },
+              link: '/earth',
           },
           {
               label: 'library',
-              collapsed: true,
-              autogenerate: { directory: 'library' },
+              link: '/library',
           },
           {
               label: 'vignettes',
@@ -42,6 +41,19 @@ export default defineConfig({
           },
       ],
       plugins: [
+          starlightScrollToTop({
+          // Button position
+          position: 'right',                 
+          showTooltip: false,
+          // Use smooth scrolling
+          smoothScroll: true,        
+          // Visibility threshold (show after scrolling 20% down)
+          threshold: 20,          
+          // Customize the SVG icon
+          svgPath: 'M25 42 12 29 42 29Z',    
+          svgStrokeWidth: 1, 
+          borderRadius: '50',      
+        }),
           starlightObsidian({
             vault: './src/content/vault',
             ignore: ['./*.md', 'id.md','.filenignore','.megaignore','*.acsm','LICENSE','*.txt','*.pdf','desktop.ini','./Rubbish','_.debris','.trash','./seeds', './private', './assets', './themes', './vignettes', './are.na'],
@@ -98,7 +110,4 @@ export default defineConfig({
         //.concat(process.env.CHECK_LINKS ? starlightLinksValidator() : []),
       }), react()],
 
-  vite: {
-    plugins: [tailwindcss()],
-  },
 });

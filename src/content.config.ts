@@ -6,21 +6,15 @@ import { docsSchema } from '@astrojs/starlight/schema';
 import { pageSiteGraphSchema } from 'starlight-site-graph/schema';
 
 export const collections = {
-	docs: defineCollection({ 
-		loader: docsLoader(), 
-		schema: docsSchema({
-			extend: pageSiteGraphSchema
-		}),
-	}),
 	about: defineCollection({ 
-		loader: docsLoader(), 
+        loader: glob({ pattern: "**/*.md", base: "./src/content/docs/about" }),
 		schema: docsSchema({
 			extend: pageSiteGraphSchema
 		}),
 	}),
 	earth: defineCollection({ 
-		loader: docsLoader(), 
-		schema: docsSchema({
+            loader: glob({ pattern: "**/*.md", base: "./src/content/docs/earth" }),
+		    schema: docsSchema({
 			extend: z.object({
 			  // Make a built-in field required instead of optional.
 			  // description: z.string(),
@@ -34,12 +28,12 @@ export const collections = {
 		  }), 
 	}),
 	library: defineCollection({ 
-		loader: docsLoader(), 
-		schema: docsSchema({
+            loader: glob({ pattern: "**/*.md", base: "./src/content/docs/library" }),
+		    schema: docsSchema({
 			extend: z.object({
 			  status: z.enum(['DORMANT', 'CURRENTLY', 'ARCHIVED']).optional(),
 			  author: z.array(z.string()).optional(),
-			  topics: z.array(reference('docs')).optional(),
+			  topics: z.array(reference('earth')).optional(),
 			}).merge(pageSiteGraphSchema),
 		  }), 
 	}),
@@ -47,6 +41,7 @@ export const collections = {
 		loader: glob({ pattern: ['**/*.md'], base: "./src/content/vignettes/data" }),
 		schema: z.object({
 			hide: z.boolean().optional(),
+			appearOn: z.boolean().optional(),
 			format: z.enum(['image', 'text']),
 			kind: reference('vignetteTypes'),
 			image: z.object({

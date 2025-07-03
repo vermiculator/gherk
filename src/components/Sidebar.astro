@@ -1,0 +1,9 @@
+---
+import Default from '@astrojs/starlight/components/Sidebar.astro';
+import Footer from './Footer.astro';
+---
+
+<Default {...Astro.props}>
+    <slot />
+</Default>
+<Footer />

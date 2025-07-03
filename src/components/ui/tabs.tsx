@@ -1,6 +1,7 @@
 import * as React from "react"
 import * as TabsPrimitive from "@radix-ui/react-tabs"
-
+import "tailwindcss"
+import "tw-animate-css"
 import { cn } from "@/lib/utils"
 
 function Tabs({
