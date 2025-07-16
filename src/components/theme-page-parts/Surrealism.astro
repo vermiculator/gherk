@@ -1,0 +1,24 @@
+---
+import { Card, LinkCard, CardGrid } from '@astrojs/starlight/components';
+import { getCollection } from 'astro:content';
+const surreality = await getCollection('vignettes', ({ data }) => {
+  if(data.appearOn) {
+    return data.appearOn.includes('surreality');
+  }
+    return false;
+});
+---
+
+
+    <Card title="surreality">
+      <LinkCard title="a link" href="/" />
+      <LinkCard title="a link" href="/" />
+      <LinkCard title="a link" href="/" />
+
+       <CardGrid>
+            {  surreality.map((item:any) =>
+            <Card title={item.data.title}></Card> )
+            }
+        </CardGrid>
+
+    </Card>

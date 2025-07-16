@@ -1,0 +1,19 @@
+---
+import { Card, LinkCard, CardGrid } from '@astrojs/starlight/components';
+import { getCollection } from 'astro:content';
+const visceral = await getCollection('vignettes', ({ data }) => {
+  if(data.appearOn) {
+    return data.appearOn.includes('visceral');
+  }
+    return false;
+});
+---
+
+
+    <Card title="visceral">
+       <CardGrid>
+            {  visceral.map((item:any) =>
+            <Card title={item.data.title}></Card> )
+            }
+        </CardGrid>
+    </Card>

@@ -1,7 +1,5 @@
 import { defineCollection, reference, z} from 'astro:content';
 import { glob } from 'astro/loaders';
-
-import { docsLoader } from '@astrojs/starlight/loaders';
 import { docsSchema } from '@astrojs/starlight/schema';
 import { pageSiteGraphSchema } from 'starlight-site-graph/schema';
 
@@ -41,7 +39,7 @@ export const collections = {
 		loader: glob({ pattern: ['**/*.md'], base: "./src/content/vignettes/data" }),
 		schema: z.object({
 			hide: z.boolean().optional(),
-			appearOn: z.boolean().optional(),
+			appearOn:z.array(z.string()).optional(),
 			format: z.enum(['image', 'text']),
 			kind: reference('vignetteTypes'),
 			image: z.object({
@@ -97,6 +95,14 @@ export const collections = {
 		),
 	}),
 
+	pinnedItems: defineCollection({ 
+		loader: glob({ pattern: ['pinned-items.json'], base: "./src/data" }),
+		schema: z.array(
+			z.object({
+				slug: z.string(),
+			})
+		),
+	}),
 	////////////////////////////////////////////
 
 };

@@ -1,0 +1,25 @@
+---
+import { Card, LinkCard, CardGrid } from '@astrojs/starlight/components';
+import { getCollection } from 'astro:content';
+const uneasy = await getCollection('vignettes', ({ data }) => {
+  if(data.appearOn) {
+    return data.appearOn.includes('uneasy');
+  }
+    return false;
+});
+---
+    <LinkCard title="uncertainty" href="/themes/uncertainty" />
+    
+    <Card title="">
+      <LinkCard title="a link" href="/" />
+      <LinkCard title="a link" href="/" />
+      <LinkCard title="a link" href="/" />
+    </Card>
+
+    <Card title="uneasy">
+       <CardGrid>
+            {  uneasy.map((item:any) =>
+            <Card title={item.data.title}></Card> )
+            }
+        </CardGrid>
+    </Card>

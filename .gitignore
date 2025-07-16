@@ -42,3 +42,4 @@ publish.css
 ## for now
 /backend
 .venv
+/public

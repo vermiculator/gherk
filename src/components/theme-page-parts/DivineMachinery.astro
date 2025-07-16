@@ -1,0 +1,30 @@
+---
+import { Card, LinkCard, CardGrid } from '@astrojs/starlight/components';
+import { getCollection } from 'astro:content';
+const fromMine = await getCollection('vignettes', ({ data }) => {
+  if(data.appearOn) {
+    return data.appearOn.includes('divine-machinery');
+  }
+    return false;
+});
+const seeds = await getCollection('vignettes', ({ data }) => {
+  if(data.appearOn) {
+    return data.appearOn.includes('divine-machinery');
+  }
+    return false;
+});
+---
+
+
+    <Card title="divine machinery">
+       <CardGrid>
+            {  fromMine.map((item:any) =>
+            <Card title={item.data.title}></Card> )
+            }
+        </CardGrid>
+       <CardGrid>
+            {  seeds.map((item:any) =>
+            <Card title={item.data.title}></Card> )
+            }
+        </CardGrid>
+    </Card>

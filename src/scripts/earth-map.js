@@ -7,3 +7,8 @@ function draw() {
     fill(255);
     ellipse(mouseX, mouseY, 80, 80);
 }
+
+export default function sketch(p) {
+  p.setup = setup;
+  p.draw = draw;
+}
