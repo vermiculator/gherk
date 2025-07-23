@@ -1,0 +1,21 @@
+---
+import Layout from '../components/Layout.astro';
+import { Card, LinkCard, CardGrid } from '@astrojs/starlight/components';
+import CanvasComponent from '../components/CanvasComponent.astro';
+
+// const allItems = Object.values(await import.meta.glob('./earth/*.md'));
+import { getCollection } from 'astro:content';
+const allItems = await getCollection('earth');
+
+---
+
+<Layout pageTitle='earth' pageStyle='leftside' includes_p5 starlightSettings={{next: false, prev: false}}>
+
+<!-- <CanvasComponent script_path='scripts/earth-map.js' canvas_id='earth-map' figure_id='1' description='sketch explanation'/>  -->
+<CardGrid>
+    {  allItems.map((item:any) =>
+      <LinkCard title={item.data.title} href={'/earth/' + item.id} />
+      )
+    }
+ </CardGrid> 
+</Layout>

@@ -1,0 +1,16 @@
+---
+import Layout from '../../components/Layout.astro';
+import { Card, CardGrid } from '@astrojs/starlight/components';
+const allItems = Object.values(await import.meta.glob('./works/data/*.md', { eager: true }));
+---
+
+<Layout pageTitle='works' pageStyle='leftside' includes_p5 starlightSettings={{}}>
+ <CardGrid>
+    {  allItems.map((item:any) =>
+      <Card title="">
+          {item.frontmatter.url}
+      </Card>
+      )
+    }
+  </CardGrid>
+</Layout>

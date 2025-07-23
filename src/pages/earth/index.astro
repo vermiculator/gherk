@@ -1,0 +1,49 @@
+---
+import Layout from '../../components/Layout.astro';
+import { Card, LinkCard, CardGrid } from '@astrojs/starlight/components';
+// import CanvasComponent from '../../components/CanvasComponent.astro';
+
+// const allItems = Object.values(await import.meta.glob('./earth/*.md'));
+import { getCollection } from 'astro:content';
+
+import { PageGraph } from 'starlight-site-graph/components'
+import type { PageSiteGraphFrontmatter } from 'starlight-site-graph/schema';
+const frontmatter : PageSiteGraphFrontmatter = {
+   title: "earth",
+   links: [],
+   tags: [],
+   sitemap: {linkInclusionRules: ["**/*"]},
+   graph: {visible: true},
+   backlinks: {visible: true}
+ }
+---
+<Layout pageTitle='earth' pageStyle='leftside' includes_p5 starlightSettings={{next: false, prev: false}}>
+
+<!-- <CanvasComponent script_path='scripts/earth-map.js' canvas_id='earth-map' figure_id='1' description='sketch explanation'/>  -->
+<div class="large-graph">
+<PageGraph showGraph slug="/earth/start-here" entry={{data: frontmatter}} config={{
+                  "depth": 2,
+                  "depthDirection": "both",
+                  "actions": [   
+                      "fullscreen",
+                      "depth",
+                      "reset-zoom",
+                      "render-external",
+                  ],
+                  "repelForce": 333,
+                  "colliderPadding": 18,
+                  "alphaDecay": 0.023,
+                  "enableDrag": true,
+                  "enablePan": true,
+                  "enableZoom": true,
+                  "enableHover": true,
+                  "enableClick": "click",
+                  "prefetchPages": true,
+                  "renderUnresolved": true,
+                  "renderArrows": false,
+                  "renderExternal": true,
+                  "linkWidth": 2,
+                  "linkHoverWidth": 3,
+}}/>
+</div>
+</Layout>

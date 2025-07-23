@@ -1,0 +1,56 @@
+---
+import Layout from "../../components/Layout.astro";
+import { ScrollArea } from "../../components/ui/scroll-area"
+import { Separator } from "../../components/ui/separator"
+
+import type { CollectionEntry } from 'astro:content';
+import { getCollection, render} from "astro:content";
+
+interface Props {
+	page: CollectionEntry<'earth'>;
+}
+
+export async function getStaticPaths() {
+  const pages = await getCollection('earth');
+  return pages.map(page => (
+ {
+    params: { id: page.id },
+    props: { 
+      ...page,
+      data: {
+        ...page.data,
+        next: (page.data?.peer ?? []),
+        prev: [
+          ...(page.data?.parent ?? []),
+          ...(page.data?.instanceOf ?? []),
+          ...(page.data?.instances ?? []),
+          ...(page.data?.child ?? [])
+        ],
+        links: [
+          ...(page.data?.links ?? []),
+          ...(page.data?.peer ?? []),
+        ],
+        backlinks: [
+          ...(page.data?.parent ?? []),
+          ...(page.data?.instanceOf ?? []),
+          ...(page.data?.instances ?? []),
+          ...(page.data?.child ?? [])
+        ],
+      }
+    }
+  }
+));
+}
+
+const { page } = Astro.props;
+const { Content } = await render(page);
+export const prerender = true;
+---
+
+<Layout pageTitle={page.data.title} pageStyle='docs' starlightSettings={{next: false, prev: false}}>
+   
+    <div>
+      <Content />
+    </div>
+
+</Layout>

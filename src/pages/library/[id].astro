@@ -1,0 +1,25 @@
+---
+import Layout from "../../components/Layout.astro";
+
+import type { CollectionEntry } from 'astro:content';
+import { getCollection, render} from "astro:content";
+
+interface Props {
+	page: CollectionEntry<'library'>;
+}
+
+export async function getStaticPaths() {
+  const pages = await getCollection('library');
+  return pages.map(page => ({
+    params: { id: page.id },
+    props: { page },
+  }));
+}
+const { page } = Astro.props;
+const { Content } = await render(page);
+export const prerender = true;
+---
+
+<Layout pageTitle={ page.data.title } pageStyle='docs' starlightSettings={{}}>
+<Content />
+</Layout>
