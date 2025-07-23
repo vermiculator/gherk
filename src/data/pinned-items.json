@@ -1,5 +1,19 @@
 [
-    { "slug" : "data-ethics"},
-    { "slug" : "wasting-human-effort"},
-    { "slug" : "redundancy"}
+    { "slug" : "abstractions-representations-and-visualisations"},
+    { "slug" : "anticapitalism"},
+    { "slug" : "archival"},
+    { "slug" : "convergence"},
+    { "slug" : "creatures-and-their-objects"},
+    { "slug" : "culture-art-and-media"},
+    { "slug" : "data-and-information-processing"},
+    { "slug" : "discoverability"},
+    { "slug" : "institutional-power"},
+    { "slug" : "internet"},
+    { "slug" : "techno-politics"},
+    { "slug" : "public-space"},
+    { "slug" : "research-and-academia"},
+    { "slug" : "spatial-design"},
+    { "slug" : "alternative-futures"},
+    { "slug" : "public-transport"}
+
 ]

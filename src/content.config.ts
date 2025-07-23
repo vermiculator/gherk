@@ -4,6 +4,12 @@ import { docsSchema } from '@astrojs/starlight/schema';
 import { pageSiteGraphSchema } from 'starlight-site-graph/schema';
 
 export const collections = {
+	docs: defineCollection({ 
+        loader: glob({ pattern: "**/*.md", base: "./src/content/docs" }),
+		schema: docsSchema({
+			extend: pageSiteGraphSchema
+		}),
+	}),
 	about: defineCollection({ 
         loader: glob({ pattern: "**/*.md", base: "./src/content/docs/about" }),
 		schema: docsSchema({
@@ -22,6 +28,8 @@ export const collections = {
 			  parent: z.array(reference('earth')).optional(),
 			  peer: z.array(reference('earth')).optional(),
 			  child: z.array(reference('earth')).optional(),
+			  instanceOf: z.array(reference('earth')).optional(),
+			  instances: z.array(reference('earth')).optional()
 			}).merge(pageSiteGraphSchema),
 		  }), 
 	}),
