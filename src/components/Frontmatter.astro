@@ -1,0 +1,15 @@
+---
+const { data } = Astro.props;
+
+---
+
+<div class="frontmatter">
+	{data.caveats}
+</div>
+
+<style>
+	.frontmatter > :global(p:only-child) {
+		margin-inline-start: auto;
+	}
+
+</style>

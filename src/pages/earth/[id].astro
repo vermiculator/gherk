@@ -1,4 +1,5 @@
 ---
+import Frontmatter from "@/components/Frontmatter.astro";
 import Layout from "../../components/Layout.astro";
 import { ScrollArea } from "../../components/ui/scroll-area"
 import { Separator } from "../../components/ui/separator"
@@ -15,29 +16,7 @@ export async function getStaticPaths() {
   return pages.map(page => (
  {
     params: { id: page.id },
-    props: { 
-      ...page,
-      data: {
-        ...page.data,
-        next: (page.data?.peer ?? []),
-        prev: [
-          ...(page.data?.parent ?? []),
-          ...(page.data?.instanceOf ?? []),
-          ...(page.data?.instances ?? []),
-          ...(page.data?.child ?? [])
-        ],
-        links: [
-          ...(page.data?.links ?? []),
-          ...(page.data?.peer ?? []),
-        ],
-        backlinks: [
-          ...(page.data?.parent ?? []),
-          ...(page.data?.instanceOf ?? []),
-          ...(page.data?.instances ?? []),
-          ...(page.data?.child ?? [])
-        ],
-      }
-    }
+    props: { page }
   }
 ));
 }
@@ -49,6 +28,7 @@ export const prerender = true;
 
 <Layout pageTitle={page.data.title} pageStyle='docs' starlightSettings={{next: false, prev: false}}>
    
+   <Frontmatter data={page.data} />
     <div>
       <Content />
     </div>

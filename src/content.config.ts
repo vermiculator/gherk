@@ -4,32 +4,49 @@ import { docsSchema } from '@astrojs/starlight/schema';
 import { pageSiteGraphSchema } from 'starlight-site-graph/schema';
 
 export const collections = {
-	docs: defineCollection({ 
-        loader: glob({ pattern: "**/*.md", base: "./src/content/docs" }),
-		schema: docsSchema({
-			extend: pageSiteGraphSchema
-		}),
+	structural: defineCollection({ 
+        loader: glob({ pattern: "**/*.md", base: "./src/content/docs/docs/structural" }),
+		 schema: docsSchema({
+			extend: pageSiteGraphSchema,
+		  }), 
 	}),
-	about: defineCollection({ 
-        loader: glob({ pattern: "**/*.md", base: "./src/content/docs/about" }),
-		schema: docsSchema({
-			extend: pageSiteGraphSchema
-		}),
+	docs: defineCollection({ 
+        loader: glob({ pattern: "{*.md,about/**/*.md,meta-thesis/**/*.md}", base: "./src/content/docs/docs" }),
+		 schema: docsSchema({
+			extend: z.object({
+			  prev: z.union([z.array(reference('docs')), z.boolean()]).optional(),
+			  next: z.union([z.array(reference('docs')), z.boolean()]).optional(),
+			  parent: z.array(reference('docs')).optional(),
+			  peer: z.array(reference('docs')).optional(),
+			  child: z.array(reference('docs')).optional(),
+		    }).merge(pageSiteGraphSchema),
+		  }), 
+	}),
+	thesis: defineCollection({ 
+        loader: glob({ pattern: "**/*.md", base: "./src/content/docs/docs/thesis" }),
+		 schema: docsSchema({
+			extend: z.object({
+			  prev: z.union([z.array(reference('thesis')), z.boolean()]).optional(),
+			  next: z.union([z.array(reference('thesis')), z.boolean()]).optional(),
+			  parent: z.array(z.union([reference('docs'), reference('earth'), reference('thesis')])).optional(),
+			}).merge(pageSiteGraphSchema),
+		  }), 
 	}),
 	earth: defineCollection({ 
             loader: glob({ pattern: "**/*.md", base: "./src/content/docs/earth" }),
-		    schema: docsSchema({
-			extend: z.object({
-			  // Make a built-in field required instead of optional.
-			  // description: z.string(),
-
-			  // Add a new field to the schema.
+		     schema: docsSchema({
+		    	extend: z.object({
 			  garden: z.enum(['soil', 'seed', 'seedling', 'sprout', 'green']).optional(),
-			  parent: z.array(reference('earth')).optional(),
-			  peer: z.array(reference('earth')).optional(),
-			  child: z.array(reference('earth')).optional(),
-			  instanceOf: z.array(reference('earth')).optional(),
-			  instances: z.array(reference('earth')).optional()
+			  parent:  z.array(z.union([reference('docs'), reference('earth'), reference('thesis')])).optional(),
+			  peer:  z.array(z.union([reference('docs'), reference('earth'), reference('thesis')])).optional(),
+			  child:  z.array(z.union([reference('docs'), reference('earth'), reference('thesis')])).optional(),
+			  instanceOf:  z.array(z.union([reference('structural'), reference('earth')])).optional(),
+			  instances: z.array(z.union([reference('structural'), reference('earth')])).optional(),
+			  caveats: z.array(z.union([reference('structural'), reference('earth')])).optional(),
+			  prev: z.array(z.union([reference('docs'), reference('library'), reference('earth'), reference('thesis')])).optional(),
+			  next: z.array(z.union([reference('docs'), reference('library'), reference('earth'), reference('thesis')])).optional(),
+			//   links: z.array(z.union([reference('docs'), reference('library'), reference('earth'), reference('thesis')])).optional(),
+			//   backlinks: z.union([z.array(z.union([reference('docs'), reference('library'), reference('earth'), reference('thesis')])), z.boolean()]).optional(),
 			}).merge(pageSiteGraphSchema),
 		  }), 
 	}),

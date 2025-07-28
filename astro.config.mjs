@@ -10,7 +10,8 @@ import starlightScrollToTop from 'starlight-scroll-to-top';
 export default defineConfig({
   integrations: [
   starlight({
-      title: 'gherk',
+      title: 'gherk',      
+      routeMiddleware: './src/routeData.ts',
       customCss: [
           './src/styles/custom.css',
           './src/styles/shadcn.css'
@@ -57,7 +58,7 @@ export default defineConfig({
           starlightObsidian({
             vault: './src/content/vault',
             ignore: ['./*.md', 'id.md','.filenignore','.megaignore','*.acsm','LICENSE','*.txt','*.pdf','desktop.ini','./Rubbish','_.debris','.trash','./seeds', './private', './assets', './themes', './vignettes', './are.na'],
-            output: '',
+            output: './src/content/docs',
             copyFrontmatter: 'all',
             tableOfContentsOverview: 'title'
           }),
