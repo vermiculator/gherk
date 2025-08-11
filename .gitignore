@@ -3,6 +3,7 @@
 
 # environment variables
 .env
+.env.local
 .env.production
 
 # macOS
@@ -23,6 +24,7 @@ desktop.ini
 .megaignore
 /assets
 *.acsm
+profile
 
 ## obsidian
 /Rubbish
