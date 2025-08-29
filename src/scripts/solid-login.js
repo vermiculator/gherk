@@ -3,21 +3,31 @@
         "username" : process.env.SOLID_USERNAME,                 
         "password" : process.env.SOLID_PASSWORD,
     }
-    const vaultBaseUrl = process.env.SOLID_VAULT_BASE_URL
+    const vaultBaseUrl = process.env.SOLID_VAULT_BASE_PATH
+    const localVaultPath = process.env.LOCAL_VAULT_BASE_PATH
     const auth = require('solid-auth-cli')
     const FC   = require('solid-file-client')
+    const { MERGE } = SolidFileClient
     const fc   = new FC( auth )
-    async function run(){
+
+     
+    async function getSession(){
         let session = await auth.currentSession()
         if (!session) { session = await auth.login(credentials) }
         console.log(`Logged in as ${session.webId}.`)
-        if( fc.itemExists(  )) {
-             try {
-                let content = await fc.readFile( vaultBaseUrl )
-                console.log('found it')
+        return session
+    }
 
-            //now set up 'content' as graphql
-            //how do i save a variable in node to be used by another script??
+    async function run(){
+        await getSession()
+        if( fc.itemExists( vaultBaseUrl )) {
+             try {
+                console.log(`Loading from ${vaultBaseUrl}`)
+                await fc.copyFolder( vaultBaseUrl, localVaultPath, {merge: MERGE.KEEP_SOURCE } )
+                //this prioritises the Solid source
+                //TODO how to keep most recently modified?
+                // think i have to make my own sync option. ugh
+                //TODO sync both ways and store sync debris
 
             }
             catch(error) {
@@ -25,8 +35,7 @@
                 console.log( error.status )  // Just the status code of the error
                 console.log( error.message ) // Just the status code and statusText
             }
-
         }
     }
-        
+
     run()

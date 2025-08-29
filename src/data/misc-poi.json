@@ -1,0 +1,91 @@
+[
+    {
+        "name": "Gerald Scarfe",
+        "latestKnownPronouns": "he/him",
+        "roles": ["illustrator", "animator"],
+        "links": [],
+        "saveContext": "work on Pink Floyd music videos"
+    },
+    {
+        "name": "Savannah Brown",
+        "latestKnownPronouns": "she/her",
+        "roles": ["poet", "author", "talks to a camera", "YouTube"],
+        "links": [
+            {
+                "label": "personal website",
+                "url": "https://www.savbrown.com/"
+             },
+            {
+                "label": "youtube",
+                "url": "https://www.youtube.com/savbrown"
+             }
+        ],
+        "saveContext": "seen through many creative phases"
+    },
+    {
+        "name": "Arlo Sterling",
+        "latestKnownPronouns": "unknown",
+        "roles": ["illustrator", "animator"],
+        "links": [],
+        "saveContext": "Drawfee animations"
+    },
+    {
+        
+        "name": "Louise Bourgeois",
+        "latestKnownPronouns": "she/her",
+        "roles": ["artist", "fine artist", "textile artist", "deceased"],
+        "links": [],
+        "saveContext": "bodily forms in the Tate Modern"
+    },
+    {
+        
+        "name": "Jimmy P",
+        "latestKnownPronouns": "unknown",
+        "roles": ["artist"],
+        "links": [],
+        "saveContext": "surrealist paintings"
+    },
+    {
+        
+        "name": "Olivia Haines",
+        "latestKnownPronouns": "unknown",
+        "roles": ["artist", "digital artist", "3D artist", "game developer", "artgames"],
+        "links": [
+            {
+                "label": "itch.io",
+                "url": "https://livvy.itch.io/ "
+             }, 
+            {
+                "label": "personal website",
+                "url": "https://oliviahaines.com/"
+             }, 
+            {
+                "label": "bluesky",
+                "url": "https://bsky.app/profile/livvy.itch.io"
+             }
+        ],
+        "saveContext": "terracotta, artgame"
+    }
+]
+
+/* 
+- mnek (musician)   
+- Steven Jordan (artist)   
+- Hiller Goodspeed (I will do my best for as long as I can)   
+- Chris Kenny (artist)   
+- Bill Wurtz (musician/yt)   
+- Rufus Porter (mural artist)   
+- honeysblowtorch on etsy   
+- Mads Berg   
+- Monreef   
+- Graham Little   
+- JC Leyendecker   
+- Alex Colville
+- Patricia Piccinini   
+- Francisco Doria Aedo   
+- Alex Schweber + Shelley
+- Jen Brea   
+- Alice Wong   
+- Porochista Khakpour   
+- Imani Barbarin (tiktok)   
+- EveVR (tech research)    */

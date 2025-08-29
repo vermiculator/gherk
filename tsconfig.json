@@ -19,7 +19,7 @@
     "/src/content/vault/private",
     "/src/content/vault/seeds"
   ],
-  "compilerOptions": { 
+  "compilerOptions": {
     "strictNullChecks": true,
     "allowJs": true,
     "types": ["vite/client"],

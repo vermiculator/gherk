@@ -36,7 +36,6 @@ export const collections = {
             loader: glob({ pattern: "**/*.md", base: "./src/content/docs/earth" }),
 		     schema: docsSchema({
 		    	extend: z.object({
-			  garden: z.enum(['soil', 'seed', 'seedling', 'sprout', 'green']).optional(),
 			  parent:  z.array(z.union([reference('docs'), reference('earth'), reference('thesis')])).optional(),
 			  peer:  z.array(z.union([reference('docs'), reference('earth'), reference('thesis')])).optional(),
 			  child:  z.array(z.union([reference('docs'), reference('earth'), reference('thesis')])).optional(),
