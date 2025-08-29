@@ -10,7 +10,7 @@ import starlightScrollToTop from 'starlight-scroll-to-top';
 export default defineConfig({
   integrations: [
   starlight({
-      title: 'gherk',      
+      title: 'gherk',
       routeMiddleware: './src/routeData.ts',
       customCss: [
           './src/styles/custom.css',
@@ -44,20 +44,20 @@ export default defineConfig({
       plugins: [
           starlightScrollToTop({
           // Button position
-          position: 'right',                 
+          position: 'right',
           showTooltip: false,
           // Use smooth scrolling
-          smoothScroll: true,        
+          smoothScroll: true,
           // Visibility threshold (show after scrolling 20% down)
-          threshold: 20,          
+          threshold: 20,
           // Customize the SVG icon
-          svgPath: 'M25 42 12 29 42 29Z',    
-          svgStrokeWidth: 1, 
-          borderRadius: '50',      
+          svgPath: 'M25 42 12 29 42 29Z',
+          svgStrokeWidth: 1,
+          borderRadius: '50',
         }),
           starlightObsidian({
             vault: './src/content/vault',
-            ignore: ['./*.md', 'id.md','.filenignore','.megaignore','*.acsm','LICENSE','*.txt','*.pdf','desktop.ini','./Rubbish','_.debris','.trash','./seeds', './private', './assets', './themes', './vignettes', './are.na'],
+            ignore: ['./*.md', '*/*.jpg', '*/*.png', '*/*.webp', 'id.md','.filenignore','.megaignore','*.acsm','LICENSE','*.txt','*.pdf','desktop.ini','./Rubbish','_.debris','.trash','./seeds', './private', './assets', './themes', './vignettes', './are.na'],
             output: './src/content/docs',
             copyFrontmatter: 'all',
             tableOfContentsOverview: 'title'
