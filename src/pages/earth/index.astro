@@ -10,7 +10,6 @@ import { PageGraph } from 'starlight-site-graph/components'
 import type { PageSiteGraphFrontmatter } from 'starlight-site-graph/schema';
 const frontmatter : PageSiteGraphFrontmatter = {
    title: "earth",
-   links: [],
    tags: [],
    sitemap: {linkInclusionRules: ["**/*"]},
    graph: {visible: true},
@@ -24,7 +23,7 @@ const frontmatter : PageSiteGraphFrontmatter = {
 <PageGraph showGraph slug="/earth/start-here" entry={{data: frontmatter}} config={{
                   "depth": 2,
                   "depthDirection": "both",
-                  "actions": [   
+                  "actions": [
                       "fullscreen",
                       "depth",
                       "reset-zoom",
@@ -38,7 +37,7 @@ const frontmatter : PageSiteGraphFrontmatter = {
                   "enableZoom": true,
                   "enableHover": true,
                   "enableClick": "click",
-                  "prefetchPages": true,
+                  "prefetchPages": false,
                   "renderUnresolved": true,
                   "renderArrows": false,
                   "renderExternal": true,

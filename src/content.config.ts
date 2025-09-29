@@ -3,62 +3,57 @@ import { glob } from 'astro/loaders';
 import { docsSchema } from '@astrojs/starlight/schema';
 import { pageSiteGraphSchema } from 'starlight-site-graph/schema';
 
+const anyDoc = z.union([reference('structural'), reference('docs'), reference('about'), reference('thesis'), reference('metaThesis'), reference('thesisParts'), reference('earth'), reference('library')]);
+
+const generalSchema = docsSchema({
+		    	extend: z.object({
+			  parent:  z.array(anyDoc).optional(),
+			  peer:  z.array(anyDoc).optional(),
+			  child:  z.array(anyDoc).optional(),
+			  instanceOf:  z.array(anyDoc).optional(),
+			  instances: z.array(anyDoc).optional(),
+			  caveats: z.array(anyDoc).optional(),
+			  backwards: z.array(anyDoc).optional(),
+			  forwards: z.array(anyDoc).optional(),
+			}).merge(pageSiteGraphSchema),
+		  });
+
 export const collections = {
 	structural: defineCollection({
-        loader: glob({ pattern: "**/*.md", base: "./src/content/docs/docs/structural" }),
-		 schema: docsSchema({
-			extend: pageSiteGraphSchema,
-		  }),
+        loader: glob({ pattern: ['**/*.md'], base: "./src/content/docs/md/plain/structural" }),
+		  schema: generalSchema
 	}),
 	docs: defineCollection({
-        loader: glob({ pattern: "{*.md,about/**/*.md,meta-thesis/*.md}", base: "./src/content/docs/docs" }),
-		 schema: docsSchema({
-			extend: z.object({
-			  backwards: z.union([z.array(z.union([reference('docs'), reference('earth'), reference('thesis')])), z.boolean()]).optional(),
-			  forwards: z.union([z.array(z.union([reference('docs'), reference('earth'), reference('thesis')])), z.boolean()]).optional(),
-			  parent: z.array(z.union([reference('docs'), reference('earth'), reference('thesis')])).optional(),
-			  peer: z.array(z.union([reference('docs'), reference('earth'), reference('thesis')])).optional(),
-			  child: z.array(z.union([reference('docs'), reference('earth'), reference('thesis')])).optional(),
-			  instances: z.array(z.union([reference('docs'), reference('earth'), reference('thesis')])).optional(),
-			  instanceOf: z.array(z.union([reference('docs'), reference('earth'), reference('thesis')])).optional(),
-
-			}).merge(pageSiteGraphSchema),
-		  }),
+        loader: glob({ pattern: ['**/*.mdx', '**/*.md'], base: "./src/content/docs/md" }),
+		  schema: generalSchema
+	}),
+	about: defineCollection({
+        loader: glob({ pattern: ['**/*.md'], base: "./src/content/docs/md/plain/about/" }),
+		 schema: generalSchema
 	}),
 	thesis: defineCollection({
-        loader: glob({ pattern: "**/*.md", base: "./src/content/docs/docs/thesis" }),
-		 schema: docsSchema({
-			extend: z.object({
-			  backwards: z.union([z.array(z.union([reference('docs'), reference('earth'), reference('thesis')])), z.boolean()]).optional(),
-			  forwards: z.union([z.array(z.union([reference('docs'), reference('earth'), reference('thesis')])), z.boolean()]).optional(),
-			  parent: z.array(z.union([reference('docs'), reference('earth'), reference('thesis')])).optional(),
-			}).merge(pageSiteGraphSchema),
-		  }),
+        loader: glob({ pattern: ['*.md'], base: "./src/content/docs/md/plain/thesis" }),
+		  schema: generalSchema
+	}),
+	metaThesis: defineCollection({
+        loader: glob({ pattern: ['**/*.md'], base: "./src/content/docs/md/plain/meta-thesis" }),
+		  schema: generalSchema
+	}),
+	thesisParts: defineCollection({
+            loader: glob({ pattern: ['**/*.md'], base: "./src/content/docs/md/plain/thesis/parts" }),
+		  schema: generalSchema
 	}),
 	earth: defineCollection({
-            loader: glob({ pattern: "{/earth/**/*.md,/docs/thesis/parts/**/*.md}", base: "./src/content/docs/" }),
-		     schema: docsSchema({
-		    	extend: z.object({
-			  parent:  z.array(z.union([reference('docs'), reference('earth'), reference('thesis')])).optional(),
-			  peer:  z.array(z.union([reference('docs'), reference('earth'), reference('thesis')])).optional(),
-			  child:  z.array(z.union([reference('docs'), reference('earth'), reference('thesis')])).optional(),
-			  instanceOf:  z.array(z.union([reference('structural'), reference('earth')])).optional(),
-			  instances: z.array(z.union([reference('structural'), reference('earth')])).optional(),
-			  caveats: z.array(z.union([reference('structural'), reference('earth')])).optional(),
-			  backwards: z.array(z.union([reference('docs'), reference('library'), reference('earth'), reference('thesis')])).optional(),
-			  forwards: z.array(z.union([reference('docs'), reference('library'), reference('earth'), reference('thesis')])).optional(),
-			//   links: z.array(z.union([reference('docs'), reference('library'), reference('earth'), reference('thesis')])).optional(),
-			//   backlinks: z.union([z.array(z.union([reference('docs'), reference('library'), reference('earth'), reference('thesis')])), z.boolean()]).optional(),
-			}).merge(pageSiteGraphSchema),
-		  }),
+            loader: glob({ pattern: ['**/*.md'], base: "./src/content/docs/md/earth" }),
+		  schema: generalSchema
 	}),
 	library: defineCollection({
-            loader: glob({ pattern: "**/*.md", base: "./src/content/docs/library" }),
+            loader: glob({ pattern: ['**/*.md'], base: "./src/content/docs/md/library" }),
 		    schema: docsSchema({
 			extend: z.object({
 			  status: z.enum(['DORMANT', 'CURRENTLY', 'ARCHIVED']).optional(),
 			  author: z.array(z.string()).optional(),
-			  topics: z.array(z.union([reference('docs'), reference('earth'), reference('thesis')])).optional(),
+			  topics: z.array(anyDoc).optional(),
 			}).merge(pageSiteGraphSchema),
 		  }),
 	}),
@@ -80,6 +75,20 @@ export const collections = {
 	}),
 	mulch: defineCollection({
 		loader: glob({ pattern: ['**/*.md'], base: "./src/content/mulch/data" }),
+		schema: z.object({
+			format: z.enum(['image', 'video']),
+			kind: z.enum(['col', 'mono']),
+			image: z.object({
+				src: z.string(),
+				alt: z.string().optional(),
+			}).optional(),
+			title: z.string().optional(),
+			caption: z.string().optional(),
+			date: z.date().optional(), // YYYY-MM-DD
+		}),
+	}),
+	works: defineCollection({
+		loader: glob({ pattern: ['**/*.md'], base: "./src/content/works/data" }),
 		schema: z.object({
 			format: z.enum(['image', 'video']),
 			kind: z.enum(['col', 'mono']),

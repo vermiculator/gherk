@@ -1,16 +1,19 @@
 ---
 import Layout from '../../components/Layout.astro';
 import { Card, CardGrid } from '@astrojs/starlight/components';
-const allItems = Object.values(await import.meta.glob('./works/data/*.md', { eager: true }));
+import { getCollection } from 'astro:content';
+const allItems = await getCollection('works');
+
 ---
 
-<Layout pageTitle='works' pageStyle='leftside' includes_p5 starlightSettings={{}}>
+<Layout pageTitle='works' pageStyle='leftside' starlightSettings={{}}>
  <CardGrid>
-    {  allItems.map((item:any) =>
-      <Card title="">
-          {item.frontmatter.url}
-      </Card>
-      )
-    }
+    {allItems.map((item) =>
+      item && item.data && item.data.image ? (
+        <Card title="">
+          <img src={item.data.image.src} alt={item.data.image.alt}/>
+        </Card>
+      ) : null
+    )}
   </CardGrid>
 </Layout>

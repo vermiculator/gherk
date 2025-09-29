@@ -8,6 +8,10 @@ import starlightScrollToTop from 'starlight-scroll-to-top';
 
 // https://astro.build/config
 export default defineConfig({
+    redirects: {
+        "/md/[...slug]": "/[...slug]",
+        "/earth/earth/[...slug]": "/earth/[...slug]"
+    },
   integrations: [
   starlight({
       title: 'gherk',
@@ -18,6 +22,7 @@ export default defineConfig({
       ],
       social: [
           { icon: 'github', label: 'GitHub', href: 'https://github.com/vermiculator' },
+          { icon: 'seti:html', label: 'Website', href: 'https://rowanlucas.github.io' },
       ],
      components: {
       Sidebar: './src/components/Sidebar.astro',
@@ -58,7 +63,7 @@ export default defineConfig({
           starlightObsidian({
             vault: './src/content/vault',
             ignore: ['./*.md', '*/*.jpg', '*/*.png', '*/*.webp', 'id.md','.filenignore','.megaignore','*.acsm','LICENSE','*.txt','*.pdf','desktop.ini','./Rubbish','_.debris','.trash','./seeds', './private', './assets', './themes', './vignettes', './are.na'],
-            output: './src/content/docs',
+            output: 'md',
             copyFrontmatter: 'all',
             tableOfContentsOverview: 'title'
           }),
@@ -86,7 +91,7 @@ export default defineConfig({
                   "enableZoom": true,
                   "enableHover": true,
                   "enableClick": "click",
-                  "prefetchPages": false,
+                  "prefetchPages": true,
                   "renderUnresolved": true,
                   "renderArrows": true,
                   "renderExternal": true,
@@ -108,7 +113,7 @@ export default defineConfig({
               },
           }),
         ]
-        //.concat(process.env.CHECK_LINKS ? starlightLinksValidator() : []),
+       // .concat(process.env.CHECK_LINKS ? starlightLinksValidator() : []),
       }), react()],
 
 });

@@ -36,7 +36,13 @@ publish.css
 .filenignore
 
 ## content
-/src/content
+/src/content/vault
+/src/content/docs/md
+/src/content/mulch
+/src/content/seeds
+/src/content/vignettes
+/src/content/works
+/src/content/assets
 /src/assets
 /src/data/bookmarks
 

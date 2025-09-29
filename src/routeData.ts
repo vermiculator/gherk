@@ -5,7 +5,7 @@ import type { ReferenceDataEntry } from 'astro:content';
 export const onRequest = defineRouteMiddleware((context, next) => {
 
     const { entry } = context.locals.starlightRoute;
-    console.log('Resolved collection:', entry.collection, 'Slug:', entry.slug, 'File:', entry.id);
+    console.log('Resolved:', entry.slug);
     entry.data.forwards = entry.data.peer;
     entry.data.backwards = [
             ...(entry.data.parent ?? []),
@@ -20,12 +20,14 @@ export const onRequest = defineRouteMiddleware((context, next) => {
             ...(entry.data.peer ?? []),
         ]);
     entry.data.backlinks = {visible: true};
+
     //convertToLinks([
     //...(entry.data.parent ?? []),
     //...(entry.data.instanceOf ?? []),
     //...(entry.data.instances ?? []),
     //...(entry.data.child ?? [])
     //]);
+    console.log(entry.data.links);
         return next();
 });
 

@@ -1,6 +1,6 @@
  const credentials = {
         "idp"      : process.env.SOLID_IDP,
-        "username" : process.env.SOLID_USERNAME,                 
+        "username" : process.env.SOLID_USERNAME,
         "password" : process.env.SOLID_PASSWORD,
     }
     const vaultBaseUrl = process.env.SOLID_VAULT_BASE_PATH
@@ -10,7 +10,6 @@
     const { MERGE } = SolidFileClient
     const fc   = new FC( auth )
 
-     
     async function getSession(){
         let session = await auth.currentSession()
         if (!session) { session = await auth.login(credentials) }
@@ -31,7 +30,7 @@
 
             }
             catch(error) {
-                //console.log( error )         // A full error response 
+                //console.log( error )         // A full error response
                 console.log( error.status )  // Just the status code of the error
                 console.log( error.message ) // Just the status code and statusText
             }
