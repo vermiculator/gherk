@@ -50,3 +50,5 @@ publish.css
 /backend
 .venv
 /public
+.vercel
+/dist

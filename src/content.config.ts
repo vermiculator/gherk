@@ -57,8 +57,12 @@ export const collections = {
 			}).merge(pageSiteGraphSchema),
 		  }),
 	}),
+
+
+	////////////////// DATA ///////////////////////
+
 	vignettes: defineCollection({
-		loader: glob({ pattern: ['**/*.md'], base: "./src/content/vignettes/data" }),
+		loader: glob({ pattern: ['**/*.md'], base: "./src/data/vignettes" }),
 		schema: z.object({
 			hide: z.boolean().optional(),
 			appearOn:z.array(z.string()).optional(),
@@ -74,7 +78,7 @@ export const collections = {
 		}),
 	}),
 	mulch: defineCollection({
-		loader: glob({ pattern: ['**/*.md'], base: "./src/content/mulch/data" }),
+		loader: glob({ pattern: ['**/*.md'], base: "./src/data/mulch" }),
 		schema: z.object({
 			format: z.enum(['image', 'video']),
 			kind: z.enum(['col', 'mono']),
@@ -88,7 +92,7 @@ export const collections = {
 		}),
 	}),
 	works: defineCollection({
-		loader: glob({ pattern: ['**/*.md'], base: "./src/content/works/data" }),
+		loader: glob({ pattern: ['**/*.md'], base: "./src/data/works" }),
 		schema: z.object({
 			format: z.enum(['image', 'video']),
 			kind: z.enum(['col', 'mono']),
@@ -101,7 +105,7 @@ export const collections = {
 			date: z.date().optional(), // YYYY-MM-DD
 		}),
 	}),
-	////////////////// DATA ///////////////////////
+	////////////////// TYPES ///////////////////////
 
 	vignetteTypes: defineCollection({
 		loader: glob({ pattern: ['vignette-kinds.json'], base: "./src/data" }),
@@ -131,6 +135,8 @@ export const collections = {
 		),
 	}),
 
+	////////////////// MISC ///////////////////////
+
 	pinnedItems: defineCollection({
 		loader: glob({ pattern: ['pinned-items.json'], base: "./src/data" }),
 		schema: z.array(
@@ -139,6 +145,7 @@ export const collections = {
 			})
 		),
 	}),
+
 	////////////////////////////////////////////
 
 };

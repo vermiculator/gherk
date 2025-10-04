@@ -6,12 +6,16 @@ import starlightObsidian from 'starlight-obsidian';
 import starlightSiteGraph from 'starlight-site-graph';
 import starlightScrollToTop from 'starlight-scroll-to-top';
 
+import vercel from '@astrojs/vercel';
+
 // https://astro.build/config
 export default defineConfig({
-    redirects: {
-        "/md/[...slug]": "/[...slug]",
-        "/earth/earth/[...slug]": "/earth/[...slug]"
-    },
+  site: 'https://gherk.vercel.app',
+  redirects: {
+      //"/md/[...slug]": "/[...slug]",
+      //"/earth/earth/[...slug]": "/earth/[...slug]"
+  },
+
   integrations: [
   starlight({
       title: 'gherk',
@@ -115,5 +119,6 @@ export default defineConfig({
         ]
        // .concat(process.env.CHECK_LINKS ? starlightLinksValidator() : []),
       }), react()],
-
+  output: 'server',
+  adapter: vercel(),
 });

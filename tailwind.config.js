@@ -6,7 +6,7 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [/* 
+  plugins: [/*
     scopedPreflightStyles({
       isolationStrategy: isolateInsideOfContainer([".tw-class", "#tw-id"]),
     }), */

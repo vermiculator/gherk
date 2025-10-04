@@ -1,17 +1,19 @@
 {
-  "name": "astro-site",
+  "name": "gherk",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "dotenv -- astro dev",
-    "start": "dotenv -- astro dev",
-    "build": "dotenv -- astro build",
-    "preview": "dotenv -- astro preview",
-    "astro": "astro"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "deploy": "astro build && vercel deploy --prebuilt --archive=tgz"
   },
   "dependencies": {
     "@astrojs/react": "^4.3.0",
     "@astrojs/starlight": "^0.34.4",
+    "@astrojs/vercel": "^8.2.8",
     "@radix-ui/react-scroll-area": "^1.2.9",
     "@radix-ui/react-separator": "^1.1.7",
     "@radix-ui/react-slot": "^1.2.3",

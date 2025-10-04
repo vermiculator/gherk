@@ -12,12 +12,15 @@
      "dist",
      "public",
     "/src/content/vault/.obsidian",
+    "/src/content/vault/_.debris",
     "/src/content/vault/.trash",
     "/src/content/vault/.data-fetcher-cache",
    "/src/content/vault/are.na",
     "/src/content/vault/.Rubbish",
+    "/src/content/vault/Rubbish",
     "/src/content/vault/private",
-    "/src/content/vault/seeds"
+    "/src/content/vault/seeds",
+    "/src/content/vault/.megaignore"
   ],
   "compilerOptions": {
     "strictNullChecks": true,
