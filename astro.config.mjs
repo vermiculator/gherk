@@ -1,21 +1,24 @@
 // @ts-check
-import { defineConfig } from 'astro/config';
+import { defineConfig, envField } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import react from '@astrojs/react';
 import starlightObsidian from 'starlight-obsidian';
 import starlightSiteGraph from 'starlight-site-graph';
 import starlightScrollToTop from 'starlight-scroll-to-top';
-
 import vercel from '@astrojs/vercel';
+import { loadEnv } from "vite";
+
+const env = loadEnv(process.env.NODE_ENV ?? '', process.cwd(), '');
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://gherk.vercel.app',
+  site: env.PUBLIC_SITE_DOMAIN,
+  output: 'server',
+  adapter: vercel(),
   redirects: {
-      //"/md/[...slug]": "/[...slug]",
-      //"/earth/earth/[...slug]": "/earth/[...slug]"
+      "/md/[...slug]": "/[...slug]",
+      "/earth/earth/[...slug]": "/earth/[...slug]"
   },
-
   integrations: [
   starlight({
       title: 'gherk',
@@ -119,6 +122,15 @@ export default defineConfig({
         ]
        // .concat(process.env.CHECK_LINKS ? starlightLinksValidator() : []),
       }), react()],
-  output: 'server',
-  adapter: vercel(),
+     env: {
+        schema: {
+            SOLID_IDP: envField.string({ context: "client", access: "public", default: "https://solidcommunity.net" }),
+            SOLID_USERNAME: envField.string({ context: "client", access: "public", default: "username" }),
+            SOLID_PASSWORD: envField.string({ context: "server", access: "secret", default: "password" }),
+            SOLID_VAULT_BASE_PATH: envField.string({ context: "client", access: "public", default: "/vault" }),
+            LOCAL_VAULT_BASE_PATH: envField.string({ context: "client", access: "public", default: "/src/content/vault/" }),
+            PUBLIC_SITE_DOMAIN:  envField.string({ context: "client", access: "public", default: "https://example.com" })
+        }
+    }
+
 });

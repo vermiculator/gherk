@@ -1,16 +1,28 @@
 ---
+export const prerender = false
 import Layout from '../components/Layout.astro';
 import { Card, CardGrid } from '@astrojs/starlight/components';
-const allItems = Object.values(await import.meta.glob('./vignettes/data/*.md', { eager: true }));
----
+import { getCollection } from 'astro:content';
+const allItems = await getCollection('vignettes');
+import { Image } from 'astro:assets';
 
-<Layout pageTitle='vignettes' pageStyle='leftside' includes_p5 starlightSettings={{prev: false, next: false}}>
+---
+<Layout pageTitle='vignettes' pageStyle='leftside' starlightSettings={{prev: false, next: false}}>
  <CardGrid>
     {  allItems.map((item:any) =>
-      <Card title="">
-          {item.frontmatter.url}
-      </Card>
-      )
-    }
+      { item.data ?
+        ( item.data.format ?
+            ( item.data.format == "text" ?
+              <Card title={item.data.title}>
+                {item.body}
+              </Card>
+            :
+              <Card title=''>
+                <Image src={item.data.url} alt={item.data && item.data.alt ? item.data.alt : 'vignette'} width="300" height="100" />
+              </Card>
+            ) : ''
+        ) : ''
+      }
+    )}
   </CardGrid>
 </Layout>

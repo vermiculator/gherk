@@ -1,6 +1,7 @@
 import { defineCollection, reference, z} from 'astro:content';
 import { glob } from 'astro/loaders';
 import { docsSchema } from '@astrojs/starlight/schema';
+//import { inruptSolidPodLoader } from '../src/loaders/solid';
 import { pageSiteGraphSchema } from 'starlight-site-graph/schema';
 
 const anyDoc = z.union([reference('structural'), reference('docs'), reference('about'), reference('thesis'), reference('metaThesis'), reference('thesisParts'), reference('earth'), reference('library')]);
@@ -61,17 +62,23 @@ export const collections = {
 
 	////////////////// DATA ///////////////////////
 
+	/* solidcontent: defineCollection({
+		loader: inruptSolidPodLoader,
+		schema: z.object({
+			id: z.string().optional(),
+			title: z.string().optional(),
+		}),
+	}), */
+
 	vignettes: defineCollection({
 		loader: glob({ pattern: ['**/*.md'], base: "./src/data/vignettes" }),
 		schema: z.object({
 			hide: z.boolean().optional(),
 			appearOn:z.array(z.string()).optional(),
 			format: z.enum(['image', 'text']),
-			kind: reference('vignetteTypes'),
-			image: z.object({
-				src: z.string(),
-				alt: z.string().optional(),
-			}).optional(),
+			kind: z.enum(['body', 'photo', 'portrait', 'person', 'nature', 'illu', 'creature', 'writing', 'poem', 'painting', 'sketch', 'misc']),
+			url: z.string().optional(),
+			alt: z.string().optional(),
 			title: z.string().optional(),
 			caption: z.string().optional(),
 			date: z.date().optional(), // YYYY-MM-DD
@@ -80,12 +87,10 @@ export const collections = {
 	mulch: defineCollection({
 		loader: glob({ pattern: ['**/*.md'], base: "./src/data/mulch" }),
 		schema: z.object({
-			format: z.enum(['image', 'video']),
+			type: z.string(),
 			kind: z.enum(['col', 'mono']),
-			image: z.object({
-				src: z.string(),
-				alt: z.string().optional(),
-			}).optional(),
+			url: z.string(),
+			alt: z.string().optional(),
 			title: z.string().optional(),
 			caption: z.string().optional(),
 			date: z.date().optional(), // YYYY-MM-DD
@@ -96,25 +101,14 @@ export const collections = {
 		schema: z.object({
 			format: z.enum(['image', 'video']),
 			kind: z.enum(['col', 'mono']),
-			image: z.object({
-				src: z.string(),
-				alt: z.string().optional(),
-			}).optional(),
+			url: z.string(),
+			alt: z.string().optional(),
 			title: z.string().optional(),
 			caption: z.string().optional(),
 			date: z.date().optional(), // YYYY-MM-DD
 		}),
 	}),
 	////////////////// TYPES ///////////////////////
-
-	vignetteTypes: defineCollection({
-		loader: glob({ pattern: ['vignette-kinds.json'], base: "./src/data" }),
-		schema: z.array(
-			z.object({
-				title: z.string(),
-			})
-		),
-	}),
 
 	mediaTypes: defineCollection({
 		loader: glob({ pattern: ['library-kinds.json'], base: "./src/data" }),

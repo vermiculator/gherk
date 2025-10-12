@@ -17,7 +17,7 @@
         return session
     }
 
-    async function run(){
+    async function copy(){
         await getSession()
         if( fc.itemExists( vaultBaseUrl )) {
              try {
@@ -30,11 +30,11 @@
 
             }
             catch(error) {
-                //console.log( error )         // A full error response
-                console.log( error.status )  // Just the status code of the error
-                console.log( error.message ) // Just the status code and statusText
+                //console.log( error )         // full error response
+                console.log( error.status )  // status code
+                console.log( error.message ) // status code and statusText
             }
         }
     }
 
-    run()
+    copy()

@@ -1,7 +1,5 @@
 ---
-format: video
+type: video/mp4
 kind: col
-image:
-    src: mulch1.mp4
-    alt: video collage
+url: https://image.mux.com/zi3gI01702G7HE1nfV4SvCS02GCh301vh024q1h00GQp7xQWY/animated.gif?width=300
 ---

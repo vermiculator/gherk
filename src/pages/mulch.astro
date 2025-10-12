@@ -1,14 +1,16 @@
 ---
 import Layout from '../components/Layout.astro';
 import { Card, CardGrid } from '@astrojs/starlight/components';
-const allItems = Object.values(await import.meta.glob('./mulch/data/*.md', { eager: true }));
----
+import { getCollection } from 'astro:content';
+const allItems = await getCollection('mulch');
+import { Image } from 'astro:assets';
 
-<Layout pageTitle='mulch' pageStyle='leftside' includes_p5 starlightSettings={{prev: false, next: false}}>
+---
+<Layout pageTitle='mulch' pageStyle='leftside' starlightSettings={{prev: false, next: false}}>
  <CardGrid>
     {  allItems.map((item:any) =>
-      <Card title="">
-          {item.frontmatter.url}
+      <Card title=''>
+        <Image src={item.data.url} alt={item.data && item.data.alt ? item.data.alt : 'glitch collage'} width="300" height="100" />
       </Card>
       )
     }
