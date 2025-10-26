@@ -1,5 +1,4 @@
 ---
-export const prerender = false
 import Frontmatter from "@/components/Frontmatter.astro";
 import Layout from "../../components/Layout.astro";
 import { ScrollArea } from "../../components/ui/scroll-area"
@@ -7,31 +6,76 @@ import { Separator } from "../../components/ui/separator"
 
 import type { CollectionEntry } from 'astro:content';
 import { getCollection, render} from "astro:content";
+import PeerLinks from "@/components/PeerLinks.astro";
+import ParentLinks from "@/components/ParentLinks.astro";
 
 interface Props {
 	page: CollectionEntry<'earth'>;
 }
 
-/* export async function getStaticPaths() {
+export async function getStaticPaths() {
+
   const pages = await getCollection('earth');
-  return pages.map(page => (
- {
-    params: { id: page.id },
-    props: { page }
+  return pages.map( (page) => {
+    return {
+        params: { id: page.id },
+        props: { page: {...page, data: {parent: page.data.parent, peer: page.data.peer, ...page.data}}}
   }
-));
-} */
+}
+)
+}
 
 const { page } = Astro.props;
 const { Content } = await render(page);
-//export const prerender = true;
+
+export const prerender = true;
+
+//console.log(parentLinks);
+//parentLinks definitely exist here but locals don't
+//console.log(Astro.locals.filterSidebar(parentLinks));
+
+
+
+//not a starlightroute so no locals... need another way to put parentLinks in starlightroute or sidebar in locals
+
+/*
+Astro.locals.filterSidebar = (parentLinks: (ReferenceDataEntry<"structural", string> | ReferenceDataEntry<"docs", string> | ReferenceDataEntry<"about", string> | ReferenceDataEntry<"thesis", string> | ReferenceDataEntry<"metaThesis", string> | ReferenceDataEntry<"thesisParts", string> | ReferenceDataEntry<"earth", string> | ReferenceDataEntry<"library", string>)[] | undefined) => {
+
+            //needs to be a list of parentLinks sent so filtering works
+          if(parentLinks) {
+            Astro.locals.starlightRoute.sidebar = Astro.locals.starlightRoute.sidebar.filter(
+            (entry) =>
+                ( entry.label === 'earth' || entry.label === 'library' || entry.label === 'vignettes' || entry.label === 'mulch' )
+                ||
+                (
+                    entry.type === 'link' &&
+                    parentLinks.map(
+                        (p) => {
+                        const rawUrl = (s: string) => String(s).trim().replace(/\/+$/, '').toLowerCase();
+                        console.log(rawUrl(p.id) + ',' + rawUrl(entry.href));
+                        return rawUrl(p.id) === rawUrl(entry.href);
+                    })
+                )
+            );
+
+            //TODO better error handling here
+            return true;
+
+          } else {
+                return false;
+          }
+} */
+
+
+//TODO preserve alias and anchor parentLinks
 ---
 
 <Layout pageTitle={page.data.title} pageStyle='docs' starlightSettings={{next: false, prev: false}}>
 
    <Frontmatter data={page.data} />
-    <div>
+    <ParentLinks data={page.data} ></ParentLinks>
+    <Separator></Separator>
       <Content />
-    </div>
-
+    <Separator></Separator>
+    <PeerLinks data={page.data} ></PeerLinks>
 </Layout>

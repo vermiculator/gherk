@@ -1,0 +1,64 @@
+---
+import { undefined } from 'astro:schema';
+import { Card, CardGrid } from '@astrojs/starlight/components';
+import { debracketKeepAlias, debracketKeepFirst, slugify } from '@/scripts/util';
+import type { CollectionEntry } from 'astro:content';
+import { getCollection } from 'astro:content';
+
+
+const { data } = Astro.props;
+const links = data.peer;
+let rawLink : string = '';
+let alias : string = '';
+let allEarth : CollectionEntry<'earth'>[] = [];
+let peers : CollectionEntry<'earth'>[] = [];
+let peerCards : {peer: CollectionEntry<'earth'>, alias: string | undefined}[] = [];
+
+if(links){
+  allEarth = await getCollection('earth');
+  if(allEarth){
+    peers = allEarth.filter((peer: {id: string}) => {
+      let matchingLinks = links.filter((link: {id: string}) => {
+        rawLink = debracketKeepFirst(String(link.id));
+        rawLink = slugify(rawLink);
+        return (rawLink && rawLink === String(peer.id));
+      });
+      if (matchingLinks && matchingLinks.length > 0 && matchingLinks[0]){
+        alias = debracketKeepAlias( String(matchingLinks[0].id));
+        return true;
+      } else return false;
+    });
+    if(peers) {
+      peerCards = peers.map((peer: CollectionEntry<'earth'>) => {
+        return {peer: peer, alias: alias};
+      });
+    }
+  }
+}
+
+import '../styles/custom.css';
+---
+
+<div class="sl-flex peerSection">
+      { peerCards ? <CardGrid>
+        {
+          peerCards?.map((card) => {
+            return (
+              card ? (
+              <Card title={(card.alias && card.alias !== '') ? card.alias : card.peer.data.title}>{Astro.site + 'earth/' + card.peer.id}</Card>
+              ) : null
+            )
+          })
+        }
+        </CardGrid>
+      : ''
+    }
+    </div>
+
+
+<style>
+	div.card-grid, div.card{
+    padding: 2em;
+  }
+
+</style>

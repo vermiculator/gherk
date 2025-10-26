@@ -22,7 +22,8 @@ export default defineConfig({
   integrations: [
   starlight({
       title: 'gherk',
-      routeMiddleware: './src/routeData.ts',
+       routeMiddleware: ['./src/scripts/middleware/routeData.ts', './src/scripts/middleware/filterSidebar.ts'],
+      //routeMiddleware: './src/scripts/middleware/routeData.ts',
       customCss: [
           './src/styles/custom.css',
           './src/styles/shadcn.css'
@@ -38,7 +39,8 @@ export default defineConfig({
       sidebar: [
           {
               label: 'earth',
-              link: '/earth',
+              collapsed: false,
+              autogenerate: { directory: '/md/earth', collapsed: true }
           },
           {
               label: 'library',
@@ -69,7 +71,7 @@ export default defineConfig({
         }),
           starlightObsidian({
             vault: './src/content/vault',
-            ignore: ['./*.md', '*/*.jpg', '*/*.png', '*/*.webp', 'id.md','.filenignore','.megaignore','*.acsm','LICENSE','*.txt','*.pdf','desktop.ini','./Rubbish','_.debris','.trash','./seeds', './private', './assets', './themes', './vignettes', './are.na'],
+            ignore: ['./*.md', '*/*.jpg', '*/*.png', '*/*.webp', 'id.md','.filenignore','.megaignore','*.acsm','LICENSE','*.txt','*.pdf','desktop.ini','./Rubbish','_.debris','.trash','./seeds', './private', './assets', './themes', './are.na'],
             output: 'md',
             copyFrontmatter: 'all',
             tableOfContentsOverview: 'title'

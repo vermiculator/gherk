@@ -1,4 +1,4 @@
-/* import { createRequire } from 'module';
+import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
 
 import type { Loader } from 'astro/loaders';
@@ -36,7 +36,8 @@ export const inruptSolidPodLoader: Loader = {
                         }
                         if (typeof error === 'object' && error !== null && 'status' in error) {
                             console.log((error as { status: unknown }).status);  // status code
-                        } 
+                        }
+                        */
                         if (typeof error === 'object' && error !== null && 'message' in error) {
                             console.log((error as { message: unknown }).message); // status code and statusText
                             response = ((error as { message: unknown }).message); // status code and statusText
@@ -49,6 +50,3 @@ export const inruptSolidPodLoader: Loader = {
 
     }
 };
-
-
-*/

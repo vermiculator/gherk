@@ -1,9 +1,22 @@
 ---
-import Default from '@astrojs/starlight/components/Sidebar.astro';
+import MobileMenuFooter from '@astrojs/starlight/components/MobileMenuFooter.astro';
+import SidebarPersister from '@astrojs/starlight/components/SidebarPersister.astro';
+import SidebarSublist from '@astrojs/starlight/components/SidebarSublist.astro';
 import Footer from './Footer.astro';
+import type { StarlightRouteData } from '@astrojs/starlight/route-data';
+
+const { sidebar } : StarlightRouteData = Astro.locals.starlightRoute;
+//const parentLinks = Astro.params;
+//console.log(parentLinks);
+
 ---
 
-<Default {...Astro.props}>
-    <slot />
-</Default>
+<SidebarPersister>
+	<SidebarSublist sublist={sidebar} />
+</SidebarPersister>
+
 <Footer />
+
+<div class="md:sl-hidden">
+	<MobileMenuFooter />
+</div>

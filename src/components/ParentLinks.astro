@@ -1,0 +1,22 @@
+---
+import { CardGrid, LinkCard } from '@astrojs/starlight/components';
+import { debracketKeepAlias, debracketKeepFirst, debracketKeepTitleOrAlias, slugify } from '@/scripts/util';
+const { data } = Astro.props;
+const links = data.parent;
+
+import '../styles/custom.css';
+---
+
+<div class="sl-flex parentSection">
+      { links ? <CardGrid>
+        {
+         links.map((link: { id: string; collection: string}) => {
+            let { id } = link;
+            return <LinkCard title={debracketKeepTitleOrAlias(String(id))} href={Astro.site + 'earth/' + slugify(debracketKeepFirst(String(id)))} />
+          }
+        )
+        }
+        </CardGrid>
+      : ''
+    }
+</div>

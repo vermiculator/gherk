@@ -20,13 +20,19 @@ const generalSchema = docsSchema({
 		  });
 
 export const collections = {
-	structural: defineCollection({
-        loader: glob({ pattern: ['**/*.md'], base: "./src/content/docs/md/plain/structural" }),
+	earth: defineCollection({
+            loader: glob({ pattern: ['**/*.md'], base: "./src/content/docs/md/earth" }),
 		  schema: generalSchema
 	}),
-	docs: defineCollection({
-        loader: glob({ pattern: ['**/*.mdx', '**/*.md'], base: "./src/content/docs/md" }),
-		  schema: generalSchema
+	library: defineCollection({
+            loader: glob({ pattern: ['**/*.md'], base: "./src/content/docs/md/library" }),
+		    schema: docsSchema({
+			extend: z.object({
+			  status: z.enum(['DORMANT', 'CURRENTLY', 'ARCHIVED']).optional(),
+			  author: z.array(z.string()).optional(),
+			  topics: z.array(anyDoc).optional(),
+			}).merge(pageSiteGraphSchema),
+		  }),
 	}),
 	about: defineCollection({
         loader: glob({ pattern: ['**/*.md'], base: "./src/content/docs/md/plain/about/" }),
@@ -44,19 +50,13 @@ export const collections = {
             loader: glob({ pattern: ['**/*.md'], base: "./src/content/docs/md/plain/thesis/parts" }),
 		  schema: generalSchema
 	}),
-	earth: defineCollection({
-            loader: glob({ pattern: ['**/*.md'], base: "./src/content/docs/md/earth" }),
+	structural: defineCollection({
+        loader: glob({ pattern: ['**/*.md'], base: "./src/content/docs/md/plain/structural" }),
 		  schema: generalSchema
 	}),
-	library: defineCollection({
-            loader: glob({ pattern: ['**/*.md'], base: "./src/content/docs/md/library" }),
-		    schema: docsSchema({
-			extend: z.object({
-			  status: z.enum(['DORMANT', 'CURRENTLY', 'ARCHIVED']).optional(),
-			  author: z.array(z.string()).optional(),
-			  topics: z.array(anyDoc).optional(),
-			}).merge(pageSiteGraphSchema),
-		  }),
+	docs: defineCollection({
+        loader: glob({ pattern: ['**/*.mdx', '**/*.md'], base: "./src/content/docs/md" }),
+		  schema: generalSchema
 	}),
 
 
