@@ -1,7 +1,6 @@
 import * as React from "react"
 import * as SeparatorPrimitive from "@radix-ui/react-separator"
-import "tailwindcss"
-import "tw-animate-css"
+
 import { cn } from "@/lib/utils"
 
 function Separator({

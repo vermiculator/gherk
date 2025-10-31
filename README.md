@@ -5,3 +5,6 @@
 
 - [Starlight’s docs](https://starlight.astro.build/)
 - [Astro documentation](https://docs.astro.build)
+
+
+//"site-helper-cli": "./node_modules/site-helper-cli",
