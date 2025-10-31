@@ -1,13 +1,11 @@
 ---
-import { undefined } from 'astro:schema';
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { CardGrid } from '@astrojs/starlight/components';
 import { debracketKeepAlias, debracketKeepFirst, slugify } from '@/scripts/util';
 import type { CollectionEntry } from 'astro:content';
 import { getCollection } from 'astro:content';
+import PreviewCard from './PreviewCard.astro'
 
-
-const { data } = Astro.props;
-const links = data.peer;
+const { links } = Astro.props;
 let rawLink : string = '';
 let alias : string = '';
 let allEarth : CollectionEntry<'earth'>[] = [];
@@ -36,7 +34,6 @@ if(links){
   }
 }
 
-import '../styles/custom.css';
 ---
 
 <div class="sl-flex peerSection">
@@ -45,7 +42,9 @@ import '../styles/custom.css';
           peerCards?.map((card) => {
             return (
               card ? (
-              <Card title={(card.alias && card.alias !== '') ? card.alias : card.peer.data.title}>{Astro.site + 'earth/' + card.peer.id}</Card>
+              <PreviewCard title={(card.alias && card.alias !== '') ? card.alias : card.peer.data.title} overflow="scroll" link={Astro.site + 'earth/' + card.peer.id}>
+                  {card.peer.body}
+              </PreviewCard>
               ) : null
             )
           })
@@ -55,10 +54,9 @@ import '../styles/custom.css';
     }
     </div>
 
+    <style>
+      .peerSection .card {
+          font-size:var(--sl-text-xs);
+        }
 
-<style>
-	div.card-grid, div.card{
-    padding: 2em;
-  }
-
-</style>
+      </style>

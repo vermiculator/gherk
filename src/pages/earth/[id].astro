@@ -1,12 +1,9 @@
 ---
 import Frontmatter from "@/components/Frontmatter.astro";
 import Layout from "../../components/Layout.astro";
-import { ScrollArea } from "../../components/ui/scroll-area"
-import { Separator } from "../../components/ui/separator"
 
 import type { CollectionEntry } from 'astro:content';
 import { getCollection, render} from "astro:content";
-import PeerLinks from "@/components/PeerLinks.astro";
 import ParentLinks from "@/components/ParentLinks.astro";
 
 interface Props {
@@ -30,52 +27,14 @@ const { Content } = await render(page);
 
 export const prerender = true;
 
-//console.log(parentLinks);
-//parentLinks definitely exist here but locals don't
-//console.log(Astro.locals.filterSidebar(parentLinks));
-
-
-
-//not a starlightroute so no locals... need another way to put parentLinks in starlightroute or sidebar in locals
-
-/*
-Astro.locals.filterSidebar = (parentLinks: (ReferenceDataEntry<"structural", string> | ReferenceDataEntry<"docs", string> | ReferenceDataEntry<"about", string> | ReferenceDataEntry<"thesis", string> | ReferenceDataEntry<"metaThesis", string> | ReferenceDataEntry<"thesisParts", string> | ReferenceDataEntry<"earth", string> | ReferenceDataEntry<"library", string>)[] | undefined) => {
-
-            //needs to be a list of parentLinks sent so filtering works
-          if(parentLinks) {
-            Astro.locals.starlightRoute.sidebar = Astro.locals.starlightRoute.sidebar.filter(
-            (entry) =>
-                ( entry.label === 'earth' || entry.label === 'library' || entry.label === 'vignettes' || entry.label === 'mulch' )
-                ||
-                (
-                    entry.type === 'link' &&
-                    parentLinks.map(
-                        (p) => {
-                        const rawUrl = (s: string) => String(s).trim().replace(/\/+$/, '').toLowerCase();
-                        console.log(rawUrl(p.id) + ',' + rawUrl(entry.href));
-                        return rawUrl(p.id) === rawUrl(entry.href);
-                    })
-                )
-            );
-
-            //TODO better error handling here
-            return true;
-
-          } else {
-                return false;
-          }
-} */
-
-
-//TODO preserve alias and anchor parentLinks
+// TODO check if preserves anchors??
 ---
 
-<Layout pageTitle={page.data.title} pageStyle='docs' starlightSettings={{next: false, prev: false}}>
+<Layout pageTitle={page.data.title} pageStyle='docs' peerLinks={page.data.peer} starlightSettings={{next: false, prev: false}}>
 
    <Frontmatter data={page.data} />
     <ParentLinks data={page.data} ></ParentLinks>
-    <Separator></Separator>
-      <Content />
-    <Separator></Separator>
-    <PeerLinks data={page.data} ></PeerLinks>
+
+    <Content />
+
 </Layout>

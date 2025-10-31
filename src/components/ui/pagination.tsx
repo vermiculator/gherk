@@ -4,7 +4,6 @@ import {
   ChevronRightIcon,
   MoreHorizontalIcon,
 } from "lucide-react"
-import "tailwindcss"
 import "tw-animate-css"
 import { cn } from "@/lib/utils"
 import { Button, buttonVariants } from "@/components/ui/button"

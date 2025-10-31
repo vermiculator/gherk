@@ -1,14 +1,12 @@
 ---
 import LastUpdated from '@astrojs/starlight/components/LastUpdated.astro';
 import Pagination from '@astrojs/starlight/components/Pagination.astro';
-const { msg } = Astro.props;
-
+import EditLink from '@astrojs/starlight/components/EditLink.astro';
 ---
 
 <footer class="sl-flex">
 	<div class="meta sl-flex">
-		<LastUpdated />
-		<div style="border: 1px solid red; padding:5px">
+		<div style="border: 1px solid slateblue; padding:5px">
 		<p>NOT YET STABLE</p>
 		<p>please excuse broken things</p>
 		<p>there will be </p>
@@ -19,8 +17,10 @@ const { msg } = Astro.props;
 		</div>
 		<small>this is a web space I carved out for myself, and <a href='/about/build-this'>you should build one too</a>
 	</small>
-	</div>
+	<EditLink />
+	<LastUpdated />
 	<Pagination />
+	</div>
 </footer>
 
 <style>
@@ -35,6 +35,12 @@ const { msg } = Astro.props;
 		margin-top: 3rem;
 		font-size: var(--sl-text-sm);
 		color: var(--sl-color-gray-3);
+	}
+
+	.meta a {
+		
+		text-decoration: none;
+		color: slateblue;
 	}
 	.meta > :global(p:only-child) {
 		margin-inline-start: auto;

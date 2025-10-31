@@ -1,12 +1,14 @@
 // @ts-check
 import { defineConfig, envField } from 'astro/config';
 import starlight from '@astrojs/starlight';
-import react from '@astrojs/react';
 import starlightObsidian from 'starlight-obsidian';
 import starlightSiteGraph from 'starlight-site-graph';
 import starlightScrollToTop from 'starlight-scroll-to-top';
 import vercel from '@astrojs/vercel';
 import { loadEnv } from "vite";
+import react from '@astrojs/react';
+import tailwindcss from '@tailwindcss/vite';
+import inject from '@rollup/plugin-inject';
 
 const env = loadEnv(process.env.NODE_ENV ?? '', process.cwd(), '');
 
@@ -19,14 +21,21 @@ export default defineConfig({
       "/md/[...slug]": "/[...slug]",
       "/earth/earth/[...slug]": "/earth/[...slug]"
   },
+  vite: {
+    plugins: [
+        tailwindcss(),
+        inject({
+            p5: 'p5',
+        }),
+    ],
+  },
   integrations: [
   starlight({
       title: 'gherk',
        routeMiddleware: ['./src/scripts/middleware/routeData.ts', './src/scripts/middleware/filterSidebar.ts'],
       //routeMiddleware: './src/scripts/middleware/routeData.ts',
       customCss: [
-          './src/styles/custom.css',
-          './src/styles/shadcn.css'
+        './src/styles/starlight-overrides.css'
       ],
       social: [
           { icon: 'github', label: 'GitHub', href: 'https://github.com/vermiculator' },

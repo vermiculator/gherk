@@ -1,0 +1,7 @@
+@layer base, starlight, theme, components, utilities, sitegraph, overrides;
+
+@overrides {
+    .large-graph .graph-container {
+        --slsg-graph-width: 100%;
+    }
+}

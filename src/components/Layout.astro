@@ -1,12 +1,22 @@
 ---
-import '../styles/custom.css'
+import "../styles/global.css";
 import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
-const { pageTitle, tabTitle, pageStyle, starlightSettings  } = Astro.props;
+import MiddleFooter from './MiddleFooter.astro';
+import { ScrollArea } from "./ui/scroll-area";
+const { pageTitle, tabTitle, pageStyle, starlightSettings, peerLinks } = Astro.props;
 starlightSettings.title = pageTitle;
 starlightSettings.tableOfContents = pageStyle == 'docs';
 starlightSettings.template = (pageStyle == 'full' ? 'splash' : 'doc');
----  
+---
 
 <StarlightPage frontmatter={starlightSettings}>
- <slot />
+    {(pageStyle !== 'full') ?
+
+        <ScrollArea className="body pagePreview p-1 max-h-1/2">
+            <slot />
+        </ScrollArea>
+        <MiddleFooter peerLinks={peerLinks}></MiddleFooter>
+
+    : ''}
+
 </StarlightPage>

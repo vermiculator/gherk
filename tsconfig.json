@@ -2,7 +2,7 @@
   "extends": "astro/tsconfigs/strict",
   "include": [
     ".astro/types.d.ts",
-    "./src",
+    "./src/*",
     "node_modules/p5/types/global.d.ts",
     "node_modules/p5/types/p5.d.ts",
     "**/*"
@@ -30,5 +30,7 @@
     "paths": {
       "@/*": ["./src/*"]
     },
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
   }
 }
