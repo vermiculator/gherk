@@ -1,4 +1,7 @@
 ---
+
+"use client"
+
 interface Props {
 	link?: string;
 }
@@ -15,6 +18,7 @@ import {
   CommandSeparator,
 } from "@/components/ui/command"
 
+
 import {
   ArrowRightIcon,
   ArrowLeftIcon
@@ -30,7 +34,7 @@ import { ButtonGroup } from "@/components/ui/button-group"
           <ArrowRightIcon />
           <a href={link}>See More</a>
         </Button>
-    <Command className="rounded-lg border shadow-md md:min-w-[450px]">
+    <!-- <Command className="rounded-lg border shadow-md md:min-w-[450px]">
       <CommandInput placeholder="Type to search..." />
       <CommandList>
         <CommandEmpty>hmmm...</CommandEmpty>
@@ -60,5 +64,5 @@ import { ButtonGroup } from "@/components/ui/button-group"
           </CommandItem>
         </CommandGroup>
       </CommandList>
-    </Command>
+    </Command> -->
     </ButtonGroup>

@@ -7,7 +7,7 @@ import starlightScrollToTop from 'starlight-scroll-to-top';
 import vercel from '@astrojs/vercel';
 import { loadEnv } from "vite";
 import react from '@astrojs/react';
-import tailwindcss from '@tailwindcss/vite';
+
 import inject from '@rollup/plugin-inject';
 
 const env = loadEnv(process.env.NODE_ENV ?? '', process.cwd(), '');
@@ -23,14 +23,17 @@ export default defineConfig({
   },
   vite: {
     plugins: [
-        tailwindcss(),
+        
         inject({
             p5: 'p5',
         }),
     ],
+    optimizeDeps: {
+	    include: []
+	},
   },
   integrations: [
-  starlight({
+      starlight({
       title: 'gherk',
        routeMiddleware: ['./src/scripts/middleware/routeData.ts', './src/scripts/middleware/filterSidebar.ts'],
       //routeMiddleware: './src/scripts/middleware/routeData.ts',
@@ -132,7 +135,7 @@ export default defineConfig({
           }),
         ]
        // .concat(process.env.CHECK_LINKS ? starlightLinksValidator() : []),
-      }), react()],
+    }), react()],
      env: {
         schema: {
             SOLID_IDP: envField.string({ context: "client", access: "public", default: "https://solidcommunity.net" }),
