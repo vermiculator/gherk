@@ -41,3 +41,12 @@ title: research planning
 	- aware you have blindspots (even on your blindspots)
 	- proving reliability (consistency of measure) and validity (accuracy of measure) 
 	- defensible - you should be able to defend your research, own what you say
+
+- personal factors
+	- eg, from Vanessa Thomas' PHD thesis
+		- "At this point, I would also like to note that my research question and objectives have been partially driven by my personal objectives, which were to:
+			1) take a break from my career.
+			2) build my confidence and decide if I wished to continue working in a male-dominated industry.
+			3) learn about the environmental footprint of digital technologies.
+			4) learn how to apply social science methods.
+			These objectives indirectly influenced how, when, and why I conducted my research."

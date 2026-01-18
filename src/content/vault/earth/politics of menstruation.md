@@ -5,5 +5,5 @@ parent:
 peer:
   - "[[misogyny in medicine]]"
   - "[[trans rights and liberation|transphobia]]"
-  - "[[guilt and shame]]"
+  - "[[guilt, shame and humiliation]]"
 ---

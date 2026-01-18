@@ -1,10 +1,16 @@
 ---
 title: LURK
-kind: 
-  - fosssh collective
+parent:
+  - "[[new media]]"
+  - "[[creative process|creative practises]]"
 peer:
-  - "[[tech art]]"
-  - "[[fosssh]]"
+  - "[[creative-critical-code]]"
+  - "[[techno-politics]]"
+  - "[[technical artistry]]"
+child:
+  - "[[fosssh|foss]]"
+kind:
+  - fosssh collective
 url: https://lurk.org/
 ---
 

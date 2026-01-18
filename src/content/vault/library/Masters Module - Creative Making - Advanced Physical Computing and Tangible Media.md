@@ -1,10 +1,12 @@
 ---
 graph:
-   visible: true
-   config: 
-      renderExternal: false
+  visible: true
+  config:
+    renderExternal: false
 title: Masters Module - Creative Making - Advanced Physical Computing and Tangible Media
 description: Module taught by Jessica Anderson, Mahalia Henry-Richards, Mirko Febbo, Joe Hoole and James Gibbons-Macgregor for the University of the Arts London Creative Computing Institute MA/MSc Modular course in Creative Computing, Data Science and Internet Equalities. I attended as part of the 2024/2025 cohort.
+parent:
+  - "[[UAL - CCI]]"
 ---
 This page exists as an index of some topics, thoughts and pages seeded by, relevant to, or linked to during my Masters study.
 

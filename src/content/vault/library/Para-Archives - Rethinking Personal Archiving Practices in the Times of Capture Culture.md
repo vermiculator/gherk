@@ -10,7 +10,7 @@ kind:
 url: https://readwise.io/reader/document_raw_content/299118231
 published_date: 2017-12-08
 short citation: (Smolicki, 2017)
-peer:
+topics:
   - "[[capture]]"
   - "[[personal archives]]"
   - "[[digital personal archives]]"
@@ -898,3 +898,5 @@ aliases:
 - "appropriating existing visual representations, or, more precisely, their excess in the public sphere. By the excess of visual representations I mean found objects and trash, such as snippets of freely distributed newspapers, business cards, and fragments of maps I pick up while walking in public spaces on a day-to-day basis, then assemble into collages and digitize by scanning them."  [⤴️](https://read.readwise.io/read/01k4spft2dpwxjdsqfbv27swxd)
 - "in misquoting, which is an iteration of the older practice of scrapbooking, I use snippets of free local newspapers to compose evocative collages, once a week"  [⤴️](https://read.readwise.io/read/01k4spga2fb89dva8t7ypjzgat)
 - "s"  [⤴️](https://read.readwise.io/read/01k7m5w852ykjy56km2xtm5zy6)
+- "the de- vice’s historical association with ideas of perfect, disembodied, objective vision. The camera obscura was believed to give the viewer “a vantage point onto the world analogous to the eye of God” (Crary, 1990, p.48) a"  [⤴️](https://read.readwise.io/read/01k8n9nybap7t86dej3sfhn3h0)
+- "proletarianization of individual and collective mental power, attention, and sensibility (2016)."  [⤴️](https://read.readwise.io/read/01k8twdxnt8pz21c8qc2sd3q05)

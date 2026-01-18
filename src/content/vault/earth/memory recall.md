@@ -2,8 +2,11 @@
 title: memory recall
 parent:
   - "[[memory]]"
-peer:
+  - "[[refinding]]"
   - "[[search and discovery]]"
+peer:
   - "[[internal and external memory]]"
-  - "[[memory storage]]"
+  - "[[discoverability]]"
+child:
+  - "[[cue - external record - direct recall]]"
 ---

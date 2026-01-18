@@ -10,6 +10,9 @@ peer:
   - "[[collaborative knowledge]]"
 aliases:
   - intersubjective
+  - shared reality
+child:
+  - "[[mass psychosis]]"
 ---
 
 - we each are ultimately one subject, one perspective

@@ -4,6 +4,7 @@ seeded-by:
   - "[[Race After Technology]]"
 parent:
   - "[[human diversity]]"
-peer:
+  - "[[a universal universal]]"
+child:
   - "[[false equivalence]]"
 ---

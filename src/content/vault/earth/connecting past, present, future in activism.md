@@ -21,5 +21,4 @@ title: connecting past, present, future in activism
 
 - 'past at the present for the future'
 		- "Memory modalities - Explorations into the socio‑material arrangements of the past at the present for the future" - (Krueckeberg, )
-
 - "creating a connection between their past and present (Sedikides et al., 2023)" [[Journaling into the void - TikTok's eudaimonic 'web-weaving' and its digital practises|(Moger, 2024)]]

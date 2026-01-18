@@ -15,6 +15,7 @@ generally where i sit on the 'isms - v much always-in-progress speculatory
 
 general alignments
 - [[intersectionality|intersectional feminism]]
+- [[bodily autonomy|pro-choice]]
 - [[anti~fascism|anti-fascism]]
 - [[de~colonialism|decolonialism]]
 - [[anti~racism|anti-racism]]
@@ -58,4 +59,3 @@ some discussion
 - [[AI]]
 - [[I do not endorse]]
 - [[pseudoscience]]
-

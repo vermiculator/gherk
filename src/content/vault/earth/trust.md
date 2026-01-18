@@ -3,10 +3,10 @@ title: temp-title
 parent:
   - "[[human relations]]"
 peer:
-  - "[[shame]]"
   - "[[privacy, security and surveillance]]"
   - "[[tangible privacy]]"
-  - "[[thoughts/context]]"
+  - "[[context]]"
+  - "[[guilt, shame and humiliation]]"
 ---
 
 - [[tendency to trust recorded information]]

@@ -31,3 +31,5 @@ peer:
 - indigenous peoples' relations, knowledges and perspectives
 - 
 - did pavolvs dogs train him
+
+- how animals treat each other

@@ -9,6 +9,8 @@ peer:
   - "[[children online]]"
   - "[[audience and purpose]]"
   - "[[the internet as public space]]"
+aliases:
+  - community guidelines online
 ---
 
 - graphic, violent and disturbing inherently as humans vs politically incendiary and culture-specific? is there anything objectively graphic?

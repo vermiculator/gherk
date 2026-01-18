@@ -5,7 +5,7 @@ aliases:
 parent:
   - "[[Masters thesis|Thesis Overview]]"
   - "[[works/thesis/thesis-conclusion|Conclusion]]"
-backwards: "[[thesis-conclusion|Conclusion]]"
+backwards: "[[works/thesis/thesis-conclusion|Conclusion]]"
 forwards: "[[Masters thesis|Thesis Overview]]"
 ---
 

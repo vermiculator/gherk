@@ -46,11 +46,19 @@ title: tumblr
 	- memes and in-jokes
 	- [[web-weaving]]
 - later cultural elements
+	- spread of format
+		- mentioned in [[Parallel Posts]]
 	- meta-posting
 	- 'shitposting'
 	- screenshot origins
 	- 'playing with jpegs'
 
+## Mentions 
+- "significant for its impact on the political thinking of Millennials and Gen Zs" [[Parallel Posts|(Rose, 2025)]]
+- "from its affordances through to its user-cultivated culture, it encourages repetition, recitation, remix, and overlap"  [⤴️](https://read.readwise.io/read/01jse5zs1zm3jr7t6vh4n8s8hz) [[Parallel Posts|(Rose, 2025)]]
+ - "a site of multimodal literary expression"  [⤴️](https://read.readwise.io/read/01jse60m94xag6shxjze66d51w)  [[Parallel Posts|(Rose, 2025)]]
+- Tumblr has "a knowledge culture that emphasises self-cultivation, “in direct opposition to formal literary education” and to the “gatekeeping” of literary knowledge" [[Parallel Posts|(Rose, 2025)]]
+ - "Gledhill’s (2018) argument that Tumblr as a whole, and specifically fandom on Tumblr, is reminiscent of the commonplace book or sentiment album." [⤴️](https://read.readwise.io/read/01jse7eyxrssk95y8ebbqv7c84)  [[Parallel Posts|(Rose, 2025)]]
 ## Note
 - "We use the small "t" when we talk about tumblr as a social experience and a platform, and capitalise it when we discuss "Tumblr Inc.," the company that developed it. The small "t" is folkloric." [[tumblr (book)#^a6661d|(Tiidenberg, Hendry, and Abidin, 2021, pp. 4)]]
 ## Resources

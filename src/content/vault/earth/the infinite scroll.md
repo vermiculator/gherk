@@ -3,6 +3,7 @@ title: the infinite scroll
 parent:
   - "[[internet content]]"
   - "[[internet sociology]]"
+  - "[[the great acceleration]]"
 peer:
   - "[[anti~advertisement]]"
   - "[[addiction]]"

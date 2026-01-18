@@ -8,7 +8,7 @@ peer:
   - "[[how to make change]]"
   - "[[redundancy]]"
   - "[[anti~capitalism]]"
-  - "[[guilt and shame]]"
+  - "[[guilt, shame and humiliation]]"
 ---
 
 - the myth of productivity

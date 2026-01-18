@@ -12,6 +12,9 @@ aliases:
   - hierarchy
   - anti-hierarchy
   - unjust hierarchies
+  - just hierarchies
+  - favourable hierarchies
+  - unfavourable hierarchies
 instanceOf:
   - "[[systems of oppression]]"
 ---

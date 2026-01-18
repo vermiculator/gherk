@@ -7,6 +7,10 @@ parent:
   - "[[anti~capitalism]]"
 peer:
   - "[[fosssh]]"
+  - "[[licensing and IP]]"
+child:
+  - "[[proprietary data export is shallow]]"
+  - "[[reinvent proprietary wheels]]"
 ---
 
 Proprietary work slows progress and innovation

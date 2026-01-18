@@ -1,5 +1,11 @@
 ---
-title: colonialism~decolonialism
+title: de~colonialism
+aliases:
+  - colonialism
+  - decolonising
+  - decolonisation
+  - colonialist
+  - decolonialist
 parent:
   - "[[human relations]]"
 peer:
@@ -8,12 +14,6 @@ peer:
   - "[[indigenous perspectives]]"
 child:
   - "[[print-based authority]]"
-aliases:
-  - colonialism
-  - decolonising
-  - decolonisation
-  - colonialist
-  - decolonialist
 ---
 
 ## colonialism

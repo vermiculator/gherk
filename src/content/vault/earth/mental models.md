@@ -14,5 +14,5 @@ peer:
 ---
 
 - mental models are only as good as they are subjectively useful, rather than objectively true
-- whilst interjective truth is important in establishing a model that will be repeatedly useful to many, it is ultimately up to an individual to use the models that are most consistently true in their own experience
+- whilst intersubjective truth is important in establishing a model that will be repeatedly useful to many, it is ultimately up to an individual to use the models that are most consistently true in their own experience
 - I'm interested in finding which models I'm using without conscious choice and to examine which are actually useful to me 

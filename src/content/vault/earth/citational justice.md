@@ -1,11 +1,12 @@
 ---
-parent:
-  - "[[research ethics]]"
-peer:
-  - "[[knowledge lineage]]"
 seeded-by:
   - "[[Masters Module - Methods for Equitable Technology Development]]"
 title: citational justice
+parent:
+  - "[[research ethics]]"
+  - "[[attribution]]"
+peer:
+  - "[[knowledge lineage]]"
 ---
 
 - visibility hierarchies in citation

@@ -1,4 +1,5 @@
 ---
+title: TikTok
 parent:
   - "[[social media platforms]]"
   - "[[video sharing platforms]]"
@@ -8,5 +9,7 @@ peer:
   - "[[Facebook]]"
   - "[[tumblr]]"
   - "[[Twitter]]"
-title: TikTok
+  - "[[YouTube]]"
+child:
+  - "[[web-weaving in TikTok slideshows]]"
 ---

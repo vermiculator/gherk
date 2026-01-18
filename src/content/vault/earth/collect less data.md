@@ -2,7 +2,7 @@
 themes:
   - data ethics
 peer:
-  - "[[involuntary data capture]]"
+  - "[[pervasive involuntary data exchange]]"
   - "[[data extractivism]]"
   - "[[data noise]]"
 child:

@@ -6,7 +6,7 @@ peer:
 title: "Emotional Design: Why we Love (or Hate) Everyday Things"
 status: DORMANT
 ---
-- 'have nothing in your house that you do not know to be useful or believe to be beautiful'[[extra quotes#^94c9d0|->]]
+- 'have nothing in your house that you do not know to be useful or believe to be beautiful'[[misc#^94c9d0|->]]
 - various values in charm, functionality, practicality, etc, important there is a variety
 - emotional element may be more critical to a product's success than practical elements
 ---

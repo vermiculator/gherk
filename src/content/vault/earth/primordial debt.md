@@ -5,5 +5,5 @@ parent:
   - "[[psychology]]"
   - "[[socio-economics]]"
 peer:
-  - "[[guilt and shame]]"
+  - "[[guilt, shame and humiliation]]"
 ---

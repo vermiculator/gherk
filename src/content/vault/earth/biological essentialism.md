@@ -1,6 +1,6 @@
 ---
 instanceOf:
-  - "[[anti ~ harmful beliefs, systems and movements]]"
+  - "[[harmful beliefs, systems and movements]]"
 parent:
   - "[[philosophy]]"
 peer:

@@ -47,5 +47,5 @@ status: DORMANT
 - branding today as violent erasure of this history
 - In his essay “Self-Reliance,” Ralph Waldo Emerson famously wrote, “A foolish consistency is the hobgoblin of little minds”; in the same passage, he worried that individuals were getting stuck in "a reverence for our past act or word because the eyes of others have no other data for computing our orbit than our past acts, and we are loath to disappoint them "
 - YouTuber burn-out videos, a competition to be the rawest, but is it real pain or a performance? Likely real pain but they must also find a way to monetise it
-- 
+- "When I joined Twitter and clicked on the little bell icon signifying my “mentions,” that was my initial thought: I was reading the graffiti written about me on an infinitely scrolling restroom wall."
 

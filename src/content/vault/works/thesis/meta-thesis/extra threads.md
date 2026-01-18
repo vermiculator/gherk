@@ -8,31 +8,17 @@ this is a dump of stuff for me to unwind and i'm sorry if you try to read it
 
 ---
 
-intent-action
-
-past-present-future
+- intent-action
+- past-present-future
+- cataloguing and autism
+- 'micro-archives' from 'you press the button, we do the rest' (Smolicki, 2018)
+- individuation and trans individuation
+- [[dogfooding is laborious and risky]]
+- [[accumulative practises]]
+- relational/category theory/morphology of bookmark collections. 
 
 ---
 
-
-- cataloguing and autism
-- authorship and knowledge lineage
-- [[citational justice]] on Tumblr vs Pinterest vs Are.na (maybe no room)
-- why not Are.na/ what it is missing (in practise section?)
-    - future work list not aligned?
-    - paid. 
-    - not self-hostable
-    - not interoperable 
-- [[tactical hypermedia]] (in context section)
-- 'micro-archives' from 'you press the button, we do the rest' (Smolicki, 2018)
-- [[problems with proprietary]] and problems with [[platforms and silos|platform power]]
-	- [[proprietary data export is shallow]]
-- individuation and trans individuation
-
-[[dogfooding is laborious and risky]]
-[[accumulative practises]]
-
-relational/category theory/morphology of bookmark collections. 
 
 the [[mesopolitics|mesopolitical]] and meso-organisational? shared/individual? superusers?
 - 'corporate systems are too heavyweight or hierarchical for such communities because their information needs sit between individual and organizational solutions. Within informal collaborative settings, access is often quite informal, with a small group of active curators and larger groups of largely passive users' - from 'The future of PIM: pragmatics and potential' 
@@ -62,17 +48,6 @@ the [[mesopolitics|mesopolitical]] and meso-organisational? shared/individual? s
 
 - hedonic and eudaimonic as distinct but sometimes independent and sometimes co-occurring... Eudaimonic well-being for individual view and what model of social change for the collective view? [[quickref#^63f9f1]] [[Journaling into the void - TikTok's eudaimonic 'web-weaving' and its digital practises]]
 
-- [[tactical hypermedia]] and semantics - tactics as "deliberate construction of a certain metaphor" [[library/Para-Archives - Rethinking Personal Archiving Practices in the Times of Capture Culture|(Smolicki, 2017)]]
-
-## temporality, impermanence of the feed, moments leaving traces, eternal and infinite present
-- ### [[pluriversal temporality]]
-- "two different, yet enmeshed relations between data and temporality: their simultaneous flux and sedimentation. Despite features of the timeline which make interaction on Facebook appear as a construction of a durable personal archive, the overriding feeling upon visiting the platform is that of being captivated (and taken captive) by a continuous “flow through the present” (Bogost, 2010, p.28) or an atmosphere of “rapid change and forgetfulness rather than of remembrance and preservation” (Kaun and Stiernstedt, 2014)."  [⤴️](https://read.readwise.io/read/01k0ycbz1n02d8vftz76a2n7zc)
-- "Consider the constant reminders to capture and share “what is on your mind” along with your “feelings” and “activities” at the moment. If responded to, every such impulse turned into a trace (image, text, or emoticon), while serving as evidence of one’s presence, a particular mark in time, calls for another affective response to ensure one’s sustained presence on top of the flow. However, as argued above, the bedrock of this flow of impulses is where simultaneous, steady accumulation, cataloging, archiving, and distribution of the extracted technovalue take place. As Kember and Zylinska assert, in the context of social media, “‘life itself’ becomes a product, that is constantly remodelled and repackaged"  [⤴️](https://read.readwise.io/read/01k0ycddw6srfkbmjbmph6zf9q)
-- "Media technologies that existed once to document and archive the world around us, providing external and physical counterparts to memory, are now designed for different purposes that implicitly recognize the existence of what I refer to as Surf Life. Their intention is to grasp the momentary and immersive, and for reasons that seem to have less to do with posterity – with the archival impulse – than with living in the now (Scanlan, 2013, p.142)."  [⤴️](https://read.readwise.io/read/01k0ycec5702ewdhdhyqye8jsb)
-- (Snapchat) - "today one can save snapshots as “memories” or “stories” that can be retained for longer periods of time. As the promotional materials for these new features demonstrate, the service is no longer about snapping “ugly,” uninhabited images or engaging in spontaneous communication,"  [⤴️](https://read.readwise.io/read/01k0ydcgkn2cwkv2ef1v05bncq)
-- "the question of how such a consistent practice could be conducted in our day, in the age of distraction and “great acceleration” (Colvile, 2016), times that systematically deny us time for reflection."  [⤴️](https://read.readwise.io/read/01k3s5yj6gr4qx4bdmkq42n0he)
-- constant reference to 'flow', 'current' or 'stream' as represented in para-archival practise
-
 ---
 
 - "his definition asserted that technologies “weave themselves,” as opposed to being consciously invited into people’s everyday lives."  [⤴️](https://read.readwise.io/read/01k0y4y4vgw9nakc75y47hbvn2) - but web-weaving as active, weaving as individually selective with the micro-decisions important tactical moments rather than imposed strategy or emergent tactics without human foresight and intent
@@ -87,13 +62,7 @@ communication extension - Bringing back the disappearing message format from Sna
 context of screenshot and context of use eg screenshotting web design vs content
 
 - individual context + individual action/insight = individual path through self-curation
-## auto-screenshots, auto-capture generally
-- automatic capture leaves no room for attuning to context, only one structure of relations and data
-	- "For the potential subject of capture, its automation leaves no room for negotiation and possibility of rejecting (or actively agreeing with) it. For the subject who incorporates the device, this automation, its passive character (and hence a decreased awareness of its working) leave no room for attuning to the specificity of a given social situation. In other words the automated character of the device replaces this specificity with an imposed, pre-defined configuration of relations."  [⤴️](https://read.readwise.io/read/01k2ytgxw0kee6pa94be5jq8hg
-	 - "If, for the life-logger, a wearable, mnemotechnological device is perceived as a fully domesticated companion (to paraphrase Donna Haraway’s term), with regard to others whose everyday trajectories this device inevitably enters this same companion turns into a predator."  [⤴️](https://read.readwise.io/read/01k2yw8qhjmjcct96ehmc5c0s9)
-	 - - "the images could function as triggers for imaginative, speculative, playful thinking and acting, as opposed to being seen (as the company would have it) as evidence of the actual and “authentic”, simply because it happens passively."  [⤴️](https://read.readwise.io/read/01k2yrzenvm17ab8s8mdv83g6q)
-	- [[applying the general to the specific]]
-	- [[unexpected connections]]
+
 ---
 
 - indexes of indexes handle mass flood and need for organisation. but lists of lists are authored
@@ -608,9 +577,47 @@ The complexity of the printing press was disguised by a set of mechanical operat
 
 --- 
 
-- anti-[['luddism']], pro-[[anti-exploitative luddism|luddism]] -- mnemotechnology not inherently worse than mnemotechnique, just needs to be adopted with enough purpose and foresight, integrate and resist appropriately [⤴️](https://read.readwise.io/read/01k0y1yhdy0gjx2apxcnr0vfpv)
+- anti-[['luddism']], pro-[[anti-exploitative luddism|luddism]] - mnemotechnology not inherently worse than mnemotechnique, just needs to be adopted with enough purpose and foresight, integrate and resist appropriately [⤴️](https://read.readwise.io/read/01k0y1yhdy0gjx2apxcnr0vfpv)
 - misquoting interesting for remix but also the active subversion implicit - remix can thwart original intent, knowledge lineage needs to include who opposes each other
-- Experiential knowledge can be considered fragmented and multi-modal due to the constant input from multiple senses across time. It can also be considered as a mode of resistance for marginalised voices. Works in this area skew towards historical counter-memory, whilst I'm also highlighting more directly functional knowledge of process and advice, where the past can be instrumentalised for the present to build alternative futures. This research concerns fragmented experiences captured, stored and shared online. In referring to 'fragments' of arbitrary scale I emphasise their capacity for re- and de- composition over their specific form.
-- Are.na roadmap - BTW 'Search: intelligent image tagging' is this AI or obj recog or something??
+- Experiential knowledge can be considered fragmented and multi-modal due to the constant input from multiple senses across time. It can also be considered as a mode of resistance for marginalised voices. Works in this area skew towards historical counter-memory, whilst I'm also highlighting more directly functional knowledge of process and advice, where the past can be instrumentalised for the present to build alternative futures.
+- fragmented experiential knowledge as it is captured, stored and shared online
 - individual complex setups with a million custom scripts and integrations, we are looking for a flexible base that interfaces the simplest setup well 
-- more participatory methods fit well with my goals but I didn't have enough time to do it properly 
+- more participatory methods fit well with my goals but can I feasibly do it properly? is it worth doing at all if i cannot?
+
+---
+
+
+- according to ingold, earlier ethnographies focus on results over process and suggested a shift from anthropology **of** to anthropology **with**.   [⤴️](https://read.readwise.io/read/01k4q937pzb9mqzrzjm8mjgytb)
+- physical process of interacting with materiality of handwritten life accounts / objects can be seen as doing (auto-)ethnography both **with** and **about** the (self-)subject [⤴️](https://read.readwise.io/read/01k4q95jxn2npne0jcmvffd0v8)
+- "media archaeology seems to center and stabilize the focus on the materiality of media objects and machines."  [⤴️](https://read.readwise.io/read/01k4q96hvcyh5sahsm223hwyea)
+- media practise shifts from interest in the medium as mechanical artifact to the artifact as a part of the everyday - an archaeology of mediation  [⤴️](https://read.readwise.io/read/01k4q98cea56ww7jrd5ycb0j57)
+- opposing the canon of [[forced techno-progressivism]] through [[counter-narratives|counter-narrative]] of media practise, reconstructing them as viewed in context of later development - “you can critique media by doing media and even doing media histories differently” (ibid., 2011, p.137), also in a non-linear “recursive way” (Huhtamo, 1997; Parikka & Huhtamo, 2011)."  [⤴️](https://read.readwise.io/read/01k4q9b2edm84as5fbdhsas4re)
+
+---
+
+- "Jan Baetens has suggested that remediation implies a sense of an underlying programmatic and linear evolution toward more advanced state of affairs, toward what might be called a premeditated condition, where the old is always succeeded by its more advanced iteration. Questioning this articulation, Baetens suggests a more pessimistic approach that draws on Foucault’s and Adorno’s readings of technological transformations. Processes of remediation, thus, have never been at peace, but are continuously torn, regulated, and manipulated by external forces, such as marketing strategies, trends, economic, political interests or cultural industries. This assertion becomes coherent with Stiegler’s concept of the pharmacological nature of technological transformations, which, while introducing progress into some spheres of life, might simultaneously instigate regress and disruption in others."  [⤴️](https://read.readwise.io/read/01k4q9fyfsx0mfr9e0k4mavrz1)
+
+- "different practices of remediation might also simultaneously be occurring on a micro-level, through individual, communal, and aesthetic appropriations."  [⤴️](https://read.readwise.io/read/01k4q9gkzersb5cb0wmpx09te9)
+
+ - but also the meso level is important - where inds are caught up in the 'progress' of orgs
+
+- "reverse-remediation, as opposed to remediation, is not driven by the intent to make the medium less visible and obtrusive, but quite the opposite. Reverse-remediation resists this logic; it makes the medium more visible to facilitate its sharper comprehension and examination. As a practical instance of media archaeology, reverse-remediation can be seen as a particular material and performative critique of contemporary media; a deliberate turn to older technologies and technological practices, so as to prompt critical reflection, not on the practices themselves, but on the current techno-cultural condition, which “does not necessarily represent the best possible state” (Zielinski, 2007, p.7)."  [⤴️](https://read.readwise.io/read/01k4q9mgdgwpwhqx4fww65r4zk)
+
+- "what insights would a revisiting of and thus learning from the selected aspects of past, pre-digital technologies (their uses, and discourses around them) provide in the current technocultural context?"  [⤴️](https://read.readwise.io/read/01k4q9p6mwzj2pbww0fdw65ym9)
+
+---
+
+- "what role do Parallel Posts play in **collective and individual** life on Tumblr,"   [[Parallel Posts]]
+
+---
+
+- direct self-participation resists centralised hierarchies [[Four Data Discourses and Assemblage Forms A Methodological Framework|(Fussell, 2022)]]
+- potential for [[recombination]] is primary to resistive power - shifting forms 
+- but - "As the data becomes increasingly distal to the context in which it was collected the risk of spurious interpretation increases, or as it progresses to the stage of governing its use may threaten the welfare of governance subjects."  [⤴️](https://read.readwise.io/read/01k0eqytn8b8fmr3e4jf8hhxte) and prior mention of privacy turbelence, and [[problems of decontextualised fragments]]. both contextual and decontextual views needed
+- tools need to be flexible to allow agency, agency is needed to shape fate
+	- "in order to allow for a conscious shaping of one’s moral agency a technological device needs to be equipped with a degree of plasticity, inviting the user to consciously make decisions (Verbeek, 2011, p.135)"  [⤴️](https://read.readwise.io/read/01k2ytywdd6m4v71wgpzt8jm6p)
+- individual context + individual action/insight = individual path through self-curation
+	- including individual metadata, tags, etc
+
+## on semantics and temporality
+- the digital archive "evades the confines of chronology and semantics as the primary criteria for organizing, mediating, and accessing information, producing "micro-temporary experiences of time that strongly defy any fixed order."  [⤴️](https://read.readwise.io/read/01k0esh33vtybw9tevdtwcfr7d). I'd argue that access to temporality and to semantics should be sliding-scale, as different data has different cadence, weight, etc in terms of meaning. semantics Should be held in digital form and some idea of content age can be useful. flat ontology doesn't mean each individual in capturing or storing that data has an atemporal, meaning-ambivalent connection to it. 

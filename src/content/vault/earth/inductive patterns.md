@@ -7,6 +7,7 @@ peer:
   - "[[deductive theories]]"
 child:
   - "[[tropes]]"
+  - "[[earth/mental models|mental models]]"
 aliases:
   - models
   - schemas

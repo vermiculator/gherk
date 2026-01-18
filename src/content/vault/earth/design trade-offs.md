@@ -1,12 +1,14 @@
 ---
+title: design trade-offs
 parent:
   - "[[design]]"
+  - "[[a universal universal]]"
 peer:
   - "[[design systems]]"
   - "[[design frameworks]]"
   - "[[design principles]]"
-title: design trade-offs
+child:
+  - "[[the pseudo-universal human]]"
 ---
 
-## The Concept
 Design involves compromise and prioritising particular goals in order to achieve *something* for *someone* rather than aiming for generalised 'perfection' with unlimited scope. Subjective ideas of acceptable performance are useful benchmarks and it's important to be aware of which trade-offs are being made either implicitly or explicitly.

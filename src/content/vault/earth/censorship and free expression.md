@@ -5,7 +5,7 @@ parent:
 peer:
   - "[[culture, art and media]]"
   - "[[normative cultures]]"
-  - "[[guilt and shame]]"
+  - "[[guilt, shame and humiliation]]"
 aliases:
   - free expression
 title: censorship and free expression

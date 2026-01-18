@@ -6,7 +6,7 @@ parent:
   - "[[Masters thesis|Thesis Overview]]"
   - "[[works/thesis/thesis-practise|Practise]]"
   - "[[works/thesis/thesis-context|Context]]"
-backwards: "[[thesis-practise|Practise]]"
+backwards: "[[works/thesis/thesis-practise|Practise]]"
 forwards: "[[works/thesis/thesis-conclusion|Conclusion]]"
 child:
   - "[[works/thesis/thesis-conclusion|Conclusion]]"

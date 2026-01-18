@@ -1,11 +1,10 @@
 ---
-title: temp-title
+title: unoffice hours
 parent:
   - "[[internet sociology]]"
   - "[[old web resurgence]]"
 peer:
-  - "[[not always up]]"
-  - "[[currently page, currently block, currently platform 1]]"
+  - "[[temporal tech]]"
 ---
 
 - online office hours open to the public via meeting-booking

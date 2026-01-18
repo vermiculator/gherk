@@ -8,9 +8,7 @@ aliases:
   - generative AI
   - AI ethics
   - ML
-tags:
-  - tool
-  - ethical-issue
+  - chatbots (derogatory)
 parent:
   - "[[tech]]"
   - "[[ethical tech and tech for ethics]]"
@@ -43,3 +41,4 @@ I actively avoid engaging in this discourse for the most part. I got in as early
 - to come: 'you don't need an LLM for that'
 - * on ai power draw and computational power, how can we conceptualise specific models for specific purpose on local sites/as personal portables, with direct, viewable tangible power draw and data draw and prompt answering all entirely self-contained
 * A primary use of general purpose GPT is for general casual science/scientific communication but that is such a dangerous thing to rely on for science for a layperson! 
+* does more prohibition of AI cause less deep engagement with it as a tool and more superficial results-based usage? does it takes skill to use ai tools well and therefore takes practise? can we afford (resource/climate/lives of people affected by water-guzzling datacenters etc) to allow this widespread practise? or should we focus on the skills of reflection/creative thought/tool use/programming/writing/etc through other means, more manually, before using the tech? its like giving every household complex dangerous machinery without decent onboarding and saying that opens access - not necessarily...

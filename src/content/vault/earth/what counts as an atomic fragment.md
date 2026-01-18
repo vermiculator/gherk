@@ -1,7 +1,12 @@
 ---
 parent:
   - "[[atomic content]]"
+  - "[[information fragments]]"
 title: what counts as an atomic fragment
+child:
+  - "[[mind atoms]]"
+peer:
+  - "[[micro-content]]"
 ---
 
 - what actually counts as atomic

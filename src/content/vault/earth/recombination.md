@@ -13,7 +13,7 @@ aliases:
   - recombining
 ---
 
-in so many contexts that my notes here will be incredibly mixed up, which fits
+in so many contexts that my notes here will be incredibly mixed up, which fits :)
 
 ---
 
@@ -27,3 +27,6 @@ twitter thread -> AI text use into a song -> viral on tiktok (on reuse and creat
 
 
 peoples of any kind will always remix, image of any kind will remix, etc. idk. Just thinking of how much disinformation is by obscuring context, thinking also of clickbait vids with cutout style thumbnails very blatantly obscuring context. When is 'fair use' actually fair use outside of the concept of copyright. What is the goal and intent of using these images 
+
+## Mentions
+- "invention is less about inaugurating the new, novel and original than re-thinking relations between existing elements of the world to conceive of a new, innovative constellation"  [⤴️](https://read.readwise.io/read/01k0es7ar2tkxqpz7fav5bgpvg) [[library/Para-Archives - Rethinking Personal Archiving Practices in the Times of Capture Culture#^59f861|->]]

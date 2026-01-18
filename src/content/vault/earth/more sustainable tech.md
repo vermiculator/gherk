@@ -16,7 +16,7 @@ parent:
 - TODO
 - Designing for Sustainability by Tim Frick
 - 'neobrutalist web design'
-- why 'always up'? not everything needed always. [[not always up]]
+- why 'always up'? not everything needed always. [[temporal tech]]
 	- "challenge the holy grail of 'uptime'" solar website
 
 ### Resources

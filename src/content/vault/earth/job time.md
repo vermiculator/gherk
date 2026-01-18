@@ -5,7 +5,8 @@ instanceOf:
   - "[[circumstantial life]]"
 aliases:
   - general occupation colours your perception of time
-renameMePlease: true
+tags:
+  - rename
 ---
 
 ## Instances

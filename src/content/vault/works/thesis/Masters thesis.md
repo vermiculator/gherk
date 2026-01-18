@@ -8,7 +8,7 @@ parent:
   - "[[Masters in public]]"
 child:
   - "[[works/thesis/thesis-introduction|Introduction]]"
-forwards: "[[thesis-introduction|Introduction]]"
+forwards: "[[works/thesis/thesis-introduction|Introduction]]"
 ---
 
 **Resistive fragment assemblages:** How do decentralised web technologies better enable collectivist para-archives?

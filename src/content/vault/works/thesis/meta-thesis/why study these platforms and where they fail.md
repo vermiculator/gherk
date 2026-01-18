@@ -1,0 +1,48 @@
+---
+title: why study these platforms and where they fail
+---
+
+- why Pinterest
+    - ease of use
+    - more layman's than arena
+    - disliked by misogynists, female-heavy
+    - a lot of existing research on it
+    - a lot of content, its been around a while
+    - see [[why multi-purpose information space matters]]
+- why not Pinterest
+    - proprietary, centrally stored
+    - somewhat hegemonic, monoculture
+    - image-only
+    - a lot of cruft
+    - dead accounts common
+- why Are.na
+	- multi-modal - [[why multi-modal information space matters]]
+	- embeds!
+    - hyper connective - [[hyperconnectivity makes use of our mass data legacy]]
+    - multi-purpose - [[why multi-purpose information space matters]]
+    - data accessible via APIs, GraphQL endpoints
+	- by these analogies Pinterest is a commonplace book and are.na is a scrapbook "Depending on what these books contained, they were either called commonplace books or scrapbooks. The former usually contained fragments of carefully selected texts (such as quotes, poems, or scientific tables), whereas the latter also contained material ephemera (such as locks of hair, pieces of ribbon or leftover ticket stubs)."  [⤴️](https://read.readwise.io/read/01k1xfqpsm6xphb1t4kyyp4dtp) - [[Public Curation and Private Collection The Production of Knowledge on Pinterest.Com|(Lui, 2015)]]
+	- are.na directly embeds the eg further literature that is only saved as index on Pinterest - direct link from the idea to the action, allowing more instrumental use - so scrapbook over commonplace book, more multi-modal, more tangible (direct digital 'materiality' of screenshots but sourceable or even embedded-interactable) akin to having the actual item and its experiences embedded rather than a reminder of it or shadow of it
+    - text input and more likely to create own content? - open community values
+    - why not work within/co-design with are.na community -- because my interests are wider. we all stem from many platforms. the fundamental building blocks of are.na still prioritise the centralised way. it is still built from a platforms perspective rather than perspective of ecosystems/interfaces/interoperability of existing filestores. much of what people bring into are.na either exists already in their file systems or another platform or is a link to elsewhere. the rest is free text that could go anywhere. it's the multi-filetype, 'connections' and interface that actually make it specialised. 
+- why Tumblr
+	- bc of my experience and the demographics as shown in lit
+    - multi-modal - [[why multi-modal information space matters]]
+    - hyper connective - [[hyperconnectivity makes use of our mass data legacy]]
+    - multi-purpose - [[why multi-purpose information space matters]]
+    - other affordances eg threaded
+    - more points [[tumblr|here ->]]
+- why tumblr over similar fediverse platforms
+	- wider demographic and also less primarily social, 'political education' (see [[Parallel Posts#^d56dd4]]), emergent forms of hyperconnective communication, cultural incubator
+- why not Tumblr
+    - proprietary, centrally stored
+    - threads only one view - which paper mentioned this
+    - more points [[tumblr|here ->]]
+- why not Are.na
+	-  primarily designers and other creatives
+	- 'a platform for saving visual bookmarks', ultimately image-first
+    - future work list not aligned?
+    - paid. block limit.
+    - not self-hostable
+    - not interoperable 
+    - on plans for later 'Search: intelligent image tagging' is this AI or obj recog or something?? disagree with [[anti~auto-equivalence|auto-equivalence]]

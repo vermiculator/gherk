@@ -1,10 +1,7 @@
 ---
-themes:
-  - physical automata
-  - visible mechanisms
-  - materials, physical properties and affordances
-  - everyday engineering
-  - compliant mechanisms
+parent:
+  - "[[low tech]]"
+  - "[[design and engineering]]"
 peer:
   - "[[animation and puppetry and automata]]"
   - "[[interaction|interaction design]]"
@@ -15,10 +12,14 @@ peer:
   - "[[innovation]]"
   - "[[industrialisation]]"
   - "[[digitisation]]"
-parent:
-  - "[[low tech]]"
-  - "[[design and engineering]]"
 title: analogue computing
+child:
+  - "[[animation and puppetry and automata]]"
+  - "[[material and form]]"
+  - "[[visible mechanisms]]"
+  - "[[compliant mechanisms]]"
+  - "[[affordances]]"
+  - "[[everyday engineering]]"
 ---
 
   -  considering early input devices with natural motion and purpose, situated within built objects and playing off their already established physical properties and affordances

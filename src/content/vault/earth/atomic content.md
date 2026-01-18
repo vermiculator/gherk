@@ -9,12 +9,12 @@ peer:
 aliases:
   - fragments
   - atoms
+  - atomic fragments
 child:
   - "[[what counts as an atomic fragment]]"
 ---
 
 - comments vs posts, annotations vs documents, etc
-- TODO link to expl. of atomic notes in 
-- 
+
 ## External Peers
 - ([[Andy's working notes]])

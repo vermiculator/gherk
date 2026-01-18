@@ -2,11 +2,11 @@
 parent:
   - "[[Masters thesis|Thesis Overview]]"
   - "[[works/thesis/thesis-discussion|Discussion]]"
-backwards: "[[thesis-discussion|Discussion]]"
+backwards: "[[works/thesis/thesis-discussion|Discussion]]"
 title: thesis conclusion
 aliases:
   - Conclusion
-forwards: "[[thesis-references|References]]"
+forwards: "[[works/thesis/thesis-references|References]]"
 child:
   - "[[works/thesis/thesis-references|References]]"
   - "[[works/thesis/thesis-introduction|Introduction]]"

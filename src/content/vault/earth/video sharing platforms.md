@@ -1,8 +1,12 @@
 ---
+title: video sharing platforms
 parent:
   - "[[platformisation]]"
   - "[[digital video]]"
 peer:
   - "[[social media platforms|social platforms]]"
-title: video sharing platforms
+child:
+  - "[[YouTube]]"
+  - "[[TikTok]]"
+  - "[[short-form video]]"
 ---

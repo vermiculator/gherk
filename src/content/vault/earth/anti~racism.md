@@ -1,22 +1,11 @@
 ---
-themes:
-  - Black identities
-  - colonialism
-  - travelling cultures
-  - construction of whiteness
-  - white guilt
-  - reparations
-  - land back
-  - cultural differences
-  - global heritage
-  - extractivism
+title: anti~racism
 aliases:
   - racism
   - xenophobia
   - racist
   - anti-racist
-instanceOf:
-  - "[[anti ~ harmful beliefs, systems and movements]]"
+  - anti-racism
 parent:
   - "[[liberation]]"
   - "[[activism]]"
@@ -26,7 +15,18 @@ peer:
   - "[[indigenous perspectives]]"
   - "[[anti~nationalism]]"
   - "[[de~colonialism]]"
-title: anti~racism
+  - "[[human migration]]"
 ---
+Lack of content here in particular does not signify lack of importance. I'm still figuring out what it is and isn't my place to comment on -- as these personal notes go public this is one of the areas that require more due diligence on my part to not [[recreating harm|recreate harm]]
 
-Lack of content here does not signify lack of importance. I'm still figuring out what it is and isn't my place to comment on -- as these personal notes go public this is one of the areas that require more due diligence on my part to not [[recreating harm|recreate harm]]
+## themes
+- xenophobia
+- Black identities
+- construction of Whiteness
+- colonalism
+- white guilt
+- reparations
+- landback
+- cultural differences
+- global heritage
+- extractivism

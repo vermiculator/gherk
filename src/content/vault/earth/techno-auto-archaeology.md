@@ -8,7 +8,6 @@ peer:
   - "[[information sciences]]"
 child:
   - "[[a techno-auto-archaeology of my information practises]]"
-renameMePlease:
 tags:
   - rename
 ---

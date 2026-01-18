@@ -8,4 +8,8 @@ peer:
   - "[[de~naturalisation]]"
   - "[[alienation]]"
   - "[[anti~racism|xenophobia]]"
+aliases:
+  - scapegoats
+child:
+  - "[[undesirables]]"
 ---

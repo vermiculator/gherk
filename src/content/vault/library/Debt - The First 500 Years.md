@@ -18,7 +18,7 @@ peer:
   - "[[developing human societies]]"
   - "[[history and heritage]]"
   - "[[primordial debt]]"
-  - "[[guilt and shame]]"
+  - "[[guilt, shame and humiliation]]"
   - "[[hierarchical domination|hierarchy]]"
   - "[[trade]]"
   - "[[interdependence]]"

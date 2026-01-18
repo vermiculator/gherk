@@ -1,8 +1,7 @@
 ---
 title: represion of sexuality
 parent:
-  - "[[shame]]"
-  - "[[taboo]]"
+  - "[[guilt, shame and humiliation|taboo]]"
 aliases:
   - sex-shaming
 ---

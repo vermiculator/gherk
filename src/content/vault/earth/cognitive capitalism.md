@@ -19,3 +19,4 @@ aliases:
 ## Mentions
 
 - "“entrepreneurial capitalism,” with a new coat of paint, is being trotted out as the “Progressive” alternative to this neoliberal model of capitalism. It’s the “**cognitive capitalism**” or “green capitalism” of Barack Obama" [[Capitalism Comes in Many Flavors|->]]
+- web-weaving as an informal practise of sharing 'counter-hegemonic sentiments that challenge \[...] **capitalist realism**' [[Journaling into the void - TikTok's eudaimonic 'web-weaving' and its digital practises|(Moger, 2024)]]

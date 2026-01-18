@@ -1,11 +1,16 @@
 ---
-parent:
-  - "[[frameworks of understanding]]"
 title: pluriversality
-peer:
-  - "[[intersubjectivity]]"
 aliases:
   - pluriversal
+parent:
+  - "[[frameworks of understanding]]"
+peer:
+  - "[[intersubjectivity]]"
+  - "[[multiplicitous counter-publics]]"
+  - "[[hyperindividuality]]"
+child:
+  - "[[situated logics]]"
+  - "[[self-transcendence]]"
 ---
 
 bell hooks on plurality. (2000) 'beyond specific historical contexts or shifting relations of power and inequalities'

@@ -1,8 +1,8 @@
 ---
-title: "people sharing an identity aren't homogenous"
+title: people sharing an identity aren't homogenous
 parent:
   - "[[human diversity]]"
-  - "[[taxonomies and classification]]"
+  - "[[indexing, cataloguing, taxonomies]]"
 peer:
   - "[[othering other humans]]"
   - "[[cultures]]"

@@ -6,5 +6,5 @@ parent:
 peer:
   - "[[systems of oppression|systemic harm]]"
   - "[[communal healing]]"
-  - "[[anti ~ harmful beliefs, systems and movements]]"
+  - "[[harmful beliefs, systems and movements]]"
 ---

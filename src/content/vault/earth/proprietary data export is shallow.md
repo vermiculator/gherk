@@ -1,5 +1,7 @@
 ---
 title: proprietary data export is shallow
+aliases:
+  - proprietary formats
 parent:
   - "[[platforms and silos]]"
   - "[[covert data extraction]]"

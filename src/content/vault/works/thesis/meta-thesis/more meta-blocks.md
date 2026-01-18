@@ -1,7 +1,7 @@
 ---
 title: more meta-blocks
 peer:
-    - '[[future-building on Are.na]]'
+  - "[[works/thesis/meta-thesis/future-building on Are.na]]"
 ---
 
 Here I **may later** add more extended analysis of individual interesting blocks that I ran out of room for in the [[works/thesis/thesis-practise#^b866b9|main body of my thesis]]. For more details of procedure see '[[Are.na meta-analysis]]'. All blocks on this page are added with consent.

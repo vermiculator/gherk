@@ -21,6 +21,7 @@ parent:
 - not yet widely adoptable as no real use cases and inconvenient form factor
 - but still seems to hold potential somehow
 - mission impossible eye gaze illusory field and other similar tech experiments from sci-fi and other media
+- spatial memory, potential of AR in memory work due to this
 
 - ### Resources
 - https://journals.sagepub.com/doi/full/10.1177/13548565231156495

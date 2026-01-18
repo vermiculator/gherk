@@ -1,7 +1,7 @@
 ---
 parent:
   - "[[big data]]"
-  - "[[involuntary data capture]]"
+  - "[[pervasive involuntary data exchange]]"
 peer:
   - "[[data noise]]"
 title: data exhaust

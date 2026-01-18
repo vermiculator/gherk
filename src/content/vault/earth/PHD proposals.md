@@ -1,0 +1,19 @@
+---
+parent:
+  - "[[PHD]]"
+  - "[[research and academia]]"
+---
+- the proposal is meta-work
+- performative work of a PHD
+	- who do i want to perform to and why?
+	- the techie amongst humanities rather than the humanities amongst techies
+	- learning the vocabulary of funding bodies vs of publishing
+	- don't compromise on the work you're doing but make it comprehensible from the outside
+- the proposal comes at the end of a period of preliminary study
+- the proposal is a lie!
+	- performance of a possibly feasible plan
+	- you don't actually want to do exactly this
+	- the work should and will develop beyond and away from this proposal
+- it proposes a research question and shows you know vaguely what can be achieved in 3-4 years
+- they love a Gantt chart or timeline even though it'll be inaccurate
+- shows you understand the scene/lit can cite and identify good methodologies

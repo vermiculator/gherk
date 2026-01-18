@@ -28,7 +28,7 @@ why quads
 selecting a Quad format
 	- information sciences consider this problem when formatting their data in eg humanities
 	- what are the options
-	- humanities/archival fields often deal with 'complexity of uncertain or even contested knowledge' - [[quickref#^f291c4]]
+	- humanities/archival fields often deal with 'complexity of uncertain or even contested knowledge' - [[Representing Provenance and Track Changes of Cultural Heritage Metadata in RDF A Survey of Existing Approaches]]
 	- this is just the sort of consideration we are dealing with here - trust, authorship, lineage
 
 - why Conjectural Graphs?
@@ -38,7 +38,8 @@ selecting a Quad format
 			- fully compliant with RDF and SPARQL standards.
 			- support multiple serialization formats, such as TriG, TriX, and N-Quads
 			- scalable
-	- "Conjectural Graphs are particularly useful in domains like the Arts and Humanities, where repre­senting uncertain or evolving claims without asserting them as facts is essential."  - [[quickref#^f291c4]]
+	- "Conjectural Graphs are particularly useful in domains like the Arts and Humanities, where repre­senting uncertain or evolving claims without asserting them as facts is essential."  - [[Representing Provenance and Track Changes of Cultural Heritage Metadata in RDF A Survey of Existing Approaches]]
+
 
 
 - so, are Conjectural Graphs compatible with the Community Solid Server?

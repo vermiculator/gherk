@@ -4,6 +4,8 @@ parent:
   - "[[sharing ideas]]"
 peer:
   - "[[knowledge creation|knowledge production]]"
+child:
+  - "[[PHD]]"
 ---
 
 - on setting research questions you can set multiple progressive questions on a topic

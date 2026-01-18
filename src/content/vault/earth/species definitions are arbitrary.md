@@ -3,7 +3,7 @@ title: species definitions are arbitrary
 parent:
   - "[[evolutionary biology and anthropology]]"
 peer:
-  - "[[taxonomies and classification]]"
+  - "[[indexing, cataloguing, taxonomies]]"
   - "[[human as animal]]"
   - "[[human animal relations]]"
   - "[[deep ecology]]"

@@ -7,7 +7,7 @@ parent:
   - "[[anti~consumerism]]"
   - "[[unethical marketing]]"
 peer:
-  - "[[involuntary data capture]]"
+  - "[[pervasive involuntary data exchange]]"
   - "[[search and discovery]]"
   - "[[corporations]]"
 aliases:

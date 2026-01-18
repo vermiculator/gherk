@@ -2,9 +2,10 @@
 peer:
   - "[[community building]]"
   - "[[digital humanities]]"
-parent:
   - "[[platforms and silos]]"
+parent:
   - "[[place-making]]"
+  - "[[digital geographies|digital mapping]]"
 title: digital placemaking
 ---
 

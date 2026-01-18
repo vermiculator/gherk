@@ -23,4 +23,3 @@ Academic research, scientific knowledge, institutional claims, constructed techn
 - [[data is not neutral]], but [[people assume data is true]]
 ## Resources
 -  [[library/Technology is Not Neutral]]
-- todo

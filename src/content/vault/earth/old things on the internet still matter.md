@@ -1,25 +1,20 @@
 ---
 title: old things on the internet still matter
-tags:
-  - algorithms
-  - journalism
-  - art-online
-themes:
-  - YouTube
-  - TikTok
-  - misinformation and disinformation
-  - relatability
-  - parasocial relationships
-parent:
-  - "[[othering other humans]]"
-  - "[[digital heritage]]"
-  - "[[internet sociology]]"
-peer:
-  - "[[children's rights]]"
-  - "[[children online]]"
-  - "[[comments]]"
 aliases:
   - old things matter, even on the internet
+parent:
+  - "[[digital heritage]]"
+  - "[[internet sociology]]"
+  - "[[cultural impact of algorithms]]"
+peer:
+  - "[[children online]]"
+  - "[[comments]]"
+  - "[[misinformation and disinformation]]"
+child:
+  - "[[web 1.0 tech is still useful]]"
+  - "[[web 1.0 tech is still here]]"
+  - "[[web 1.0 literature is still useful]]"
+  - "[[TikTok]]"
 ---
 
 - how old content is more dismissible on the internet

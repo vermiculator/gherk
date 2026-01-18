@@ -17,7 +17,8 @@ as opposed to [[recording]], capturing can be seen as an automated or passive pr
 
 ---
 	
-when I get a spark of inspiration I save it for later but it is held there suspended because I can't make progress on my thinking about it until later. Orchestration of attention rather than contemplating and organising as is implied by recording 
+- when I get a spark of inspiration I save it for later but it is held there suspended because I can't make progress on my thinking about it until later. Orchestration of attention rather than contemplating and organising as is implied by recording 
+- capturing voice. folkloric / fairytale connotations
 
 ---
 ## Mentions

@@ -6,7 +6,7 @@ parent:
 peer:
   - "[[transmisogyny]]"
 instanceOf:
-  - "[[anti ~ harmful beliefs, systems and movements]]"
+  - "[[harmful beliefs, systems and movements]]"
 aliases:
   - TERF
   - trans-exclusionary radical feminists

@@ -92,7 +92,7 @@ recommended-by: "[[Masters Module - Intersectional Internets]]"
 - causes professional disputes between life and social sciences
 - "Biological-determinist ideology is only one position opened up in scientific culture for arguing the meanings of human animality. There is much room for radical political people to contest the meanings of the breached boundary" - [[human as animal]]
 - mythic cyborgs appear at this transgressed boundary
-- "Far from signalling a walling off of people from other living beings, cyborgs signal disturbingly and pleasurably tight coupling"  relation to bestiality, [[guilt and shame|taboo]] [[human animal relations]]
+- "Far from signalling a walling off of people from other living beings, cyborgs signal disturbingly and pleasurably tight coupling"  relation to bestiality, [[guilt, shame and humiliation|taboo]] [[human animal relations]]
 	- [[2000s Battlestar Galactica]] Starbuck + ship that is both machine and animal
 	- horse - car - ship similar relationship to humans historically - [[object caretakers]] - [[object as extension of self]] - [[occupying objects]]
 - "Pre-cybernetic machines could be haunted; there was always the spectre of the [[ghost in the machine]]." ^94b428

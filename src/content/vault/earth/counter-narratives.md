@@ -29,3 +29,8 @@ critique-or-extension: "[[para-narratives]]"
 	-  "might choose to access the story in a different way and make different interpretations [[Curation, Curation, Curation#^be215f|(Wolff and Mulholland, 2013)]]
 	- "When the story is not overtly told, there is more opportunity for the visitor/reader to make their own interpretations" [[Curation, Curation, Curation#^6de6de|(Wolff and Mulholland, 2013)]]
 	-   "The curator might add their own annotations, interpreting the object in the context of the narrative that is being developed" [[Curation, Curation, Curation#^35354e|(Wolff and Mulholland, 2013)]]
+
+---
+
+## Mentions
+- "Wei argues that through users’ efforts towards “finding queer voices throughout history”, Web Weaving presents an “alternative queer canon” (n.p.)." [⤴️](https://read.readwise.io/read/01jse6gr6h3kc910c21jffqpsz) [[Parallel Posts|(Rose, 2025)]]

@@ -23,4 +23,4 @@ page description: placeholder for interesting concepts within language/semantics
 - constant evolution
 - a **heterological word**, does not apply to itself.
 - [sound symbolism](https://en.wikipedia.org/wiki/Sound_symbolism) is the perceptual similarity between speech sounds and concept meanings. It is a form of [linguistic iconicity](https://en.wikipedia.org/wiki/Iconicity "Iconicity")
-- other pronouns eg first person dead, used only in suicide notes
+- very specific pronouns eg first person dead, used only in suicide notes

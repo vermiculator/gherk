@@ -1,8 +1,8 @@
 ---
 parent:
   - "[[philosophy]]"
-  - "[[data and information processing]]"
-  - "[[networks and communications]]"
+  - "[[ontologies]]"
+  - "[[enforced ontologies]]"
 peer:
   - "[[works/thesis/meta-thesis/Are.na analysis]]"
   - "[[intersubjectivity]]"
@@ -11,6 +11,9 @@ peer:
 title: flat ontology
 aliases:
   - flat hierarchy
+child:
+  - "[[data and information processing]]"
+  - "[[networks and communications]]"
 ---
 
 where each unit is equal to (or can be treated equal to?) another

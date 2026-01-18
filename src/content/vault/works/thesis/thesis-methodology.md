@@ -1,17 +1,17 @@
 ---
 parent:
   - "[[Masters thesis|Thesis Overview]]"
-  - "[[thesis-introduction|Introduction]]"
-  - "[[thesis-context|Context]]"
+  - "[[works/thesis/thesis-introduction|Introduction]]"
+  - "[[works/thesis/thesis-context|Context]]"
 title: thesis methodology
 aliases:
   - Methodology
 backwards: "[[works/thesis/thesis-introduction|Introduction]]"
 forwards: "[[works/thesis/thesis-practise|Practise]]"
 child:
-  - "[[thesis-practise|Practise]]"
-  - "[[thesis-discussion|Discussion]]"
-  - "[[thesis-conclusion|Conclusion]]"
+  - "[[works/thesis/thesis-practise|Practise]]"
+  - "[[works/thesis/thesis-discussion|Discussion]]"
+  - "[[works/thesis/thesis-conclusion|Conclusion]]"
 ---
 
 ## Framings

@@ -1,16 +1,19 @@
 ---
 seeded-by:
   - "[[Masters Module - Design for Social Change]]"
-instanceOf:
-  - "[[earth/research methods]]"
 title: autoethnography
 parent:
   - "[[ethnography]]"
   - "[[qualitative methods]]"
   - "[[practise-led vs practise-based research|practise-led research]]"
+  - "[[research methods]]"
+child:
+  - "[[biomythography]]"
 ---
 
 - reflections on your own experience, later analysed and connected via theories from other literature - ethnographic view of your own experience
+- academic form of situated reflexivity, connecting the personal to wider socio-politics, [[outwardly personal]] meta-theses
+
 ---
 
 - trying to avoid the slip into [[biomythography]]?

@@ -9,3 +9,5 @@ parent:
 
 - many formats of artwork are vignettes
 - a good way to feel justified in making art without grand message or wide appeal but just to capture some small moment in time and space
+- realising how much of the art I want to make is in vignette form - or a collection of vignettes in a theme. 
+-  [[proceduralist artgames]] - "As far as story is concerned, procedural works tend to employ metaphor or vignette instead of narrative."  [⤴️](https://read.readwise.io/read/01jj4en4evt0r9whrypdefvw80)

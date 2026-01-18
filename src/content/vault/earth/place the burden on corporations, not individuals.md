@@ -1,10 +1,13 @@
 ---
 title: place the burden on corporations, not individuals
 parent:
-  - "[[how to make change]]"
-  - "[[just transitions]]"
   - "[[institutional power]]"
   - "[[system change]]"
+  - "[[personal responsibility]]"
+  - "[[collective responsibility]]"
+peer:
+  - "[[how to make change]]"
+  - "[[just transitions]]"
 ---
 
 There is frequent messaging from brands and nations to make an individual difference to big problems like climate change. Whilst individuals can make small impacts the majority of the damage is orchestrated by corporations and there should be far more insistence that they reduce the harms they are producing. 

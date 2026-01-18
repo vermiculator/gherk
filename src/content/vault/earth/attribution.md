@@ -1,7 +1,14 @@
 ---
+title: attribution
+aliases:
+  - credit
+  - citation
 parent:
   - "[[sharing ideas]]"
-peer:
   - "[[knowledge ownership]]"
-title: attribution
+peer:
+  - "[[provenance]]"
+child:
+  - "[[licensing and IP]]"
+  - "[[citational justice]]"
 ---

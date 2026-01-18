@@ -2,7 +2,9 @@
 title: active decision-making for regaining agency under controlling structures
 parent:
   - "[[anti~determinism]]"
-renameMePlease: true
+  - "[[agency]]"
+tags:
+  - rename
 ---
 
 ## in relation with technologies
